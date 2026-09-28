@@ -1,0 +1,119 @@
+<!-- app.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>/* Copy into each variant's app.html head, replacing i6-editorial. Runs before paint. */
+(function () {
+  var key = 'fedramp-design-concepts:i6:i6-editorial:theme';
+  var valid = function (value) { return ['light', 'dark', 'system'].includes(value); };
+  var preference = 'light';
+  try { var stored = localStorage.getItem(key); if (valid(stored)) preference = stored; } catch (_) {}
+  var url = new URL(location.href);
+  var requested = url.searchParams.get('theme');
+  if (valid(requested)) { preference = requested; try { localStorage.setItem(key, preference); } catch (_) {} }
+  var media = matchMedia('(prefers-color-scheme: dark)');
+  function apply() {
+    document.documentElement.dataset.theme = preference === 'system' ? (media.matches ? 'dark' : 'light') : preference;
+    document.documentElement.dataset.themePreference = preference;
+  }
+  window.fedrampTheme = {
+    get: function () { return preference; },
+    set: function (value) {
+      if (!valid(value)) return;
+      preference = value;
+      try { localStorage.setItem(key, value); } catch (_) {}
+      var current = new URL(location.href);
+      if (current.searchParams.has('theme')) { current.searchParams.delete('theme'); history.replaceState(history.state, '', current); }
+      apply();
+    }
+  };
+  media.addEventListener('change', function () { if (preference === 'system') apply(); });
+  apply();
+})();
+</script>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/fedramp-design-concepts/i6-editorial/favicons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>@font-face{font-family:Sora;src:url('/fedramp-design-concepts/i6-editorial/fonts/sora.ttf') format('truetype');font-weight:100 800;font-display:swap}</style>
+<!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 300;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i6-editorial/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 400;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i6-editorial/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 700;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i6-editorial/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2') format('woff2');
+      }
+    </style>
+
+    <link href="/fedramp-design-concepts/i6-editorial/_app/immutable/entry/start.Dm8JKTAA.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/B6jIGv6L.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/Cy56or_u.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/D5jDi--9.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/dNtl9K3A.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/BSnnIrjC.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/entry/app.BN7H34NI.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/Dp1pzeXC.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/BfFMKd3L.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/C21s83yY.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/CL-Pzn8F.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/0ryClcvR.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/BZ53nrYR.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/EjDTm0tp.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/rx2drT9l.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/nodes/0.DfDzEziN.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/ChahFsvn.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/Bi3Qdfxm.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/DYKi_ky7.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/1V1h643M.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/McFC9rJU.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/nodes/12.BZH5k9vQ.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/B9YHFGkQ.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/chunks/C1CrVNjz.js" rel="modulepreload">
+		<!--1vlp4ji--><!----><title>Federal assurance rebuilt for commercial cloud. | FedRAMP</title>
+		<link href="/fedramp-design-concepts/i6-editorial/_app/immutable/assets/0.CkVFXF2Y.css" rel="stylesheet">
+  </head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><a class="ed-skip" href="#main-content">Skip to main content</a> <div class="ed-notice">Local design concept · <a href="https://www.fedramp.gov/">Official FedRAMP.gov</a></div> <header class="ed-header"><a class="ed-logo" href="/fedramp-design-concepts/i6-editorial/" aria-label="FedRAMP home page"><img src="/fedramp-design-concepts/i6-editorial/fedramp-logo.svg" width="154" height="60" alt="FedRAMP"/></a><!--[-1--><!--]--><!----> <nav class="ed-desktop-nav" aria-label="Primary navigation"><details><summary>Certification Profiles</summary><div><a href="/fedramp-design-concepts/i6-editorial/profiles/">Compare certification profiles</a><a href="/fedramp-design-concepts/i6-editorial/20x/">20x and Class A</a><a href="/fedramp-design-concepts/i6-editorial/rev5/">Rev5 requirements and transition</a></div></details> <details><summary>Engineering Resources</summary><div><a href="/fedramp-design-concepts/i6-editorial/engineering/">Build with your engineering team</a><a href="/fedramp-design-concepts/i6-editorial/engineering/#mcp">AI and MCP walkthrough</a><a href="https://www.fedramp.gov/2026/sources/">Official source data</a></div></details> <details><summary>Agency Use</summary><div><a href="/fedramp-design-concepts/i6-editorial/agency-use/">Understand agency use</a><a href="/fedramp-design-concepts/i6-editorial/agency-use/#review">Review a certification package</a></div></details> <details><summary>Certified Products</summary><div><p>Find offerings and check their certification status.</p><a href="/fedramp-design-concepts/i6-editorial/marketplace/">Browse the Marketplace</a><a href="/fedramp-design-concepts/i6-editorial/profiles/#listing-status">Understand listing statuses</a></div></details> <details><summary>Community</summary><div><a href="/fedramp-design-concepts/i6-editorial/community/">Join the conversation</a><a href="https://www.fedramp.gov/events/">Events</a><a href="https://www.fedramp.gov/changelog/">Changelog</a><a href="/fedramp-design-concepts/i6-editorial/rfcs/">Requests for comment</a><a href="https://github.com/FedRAMP/community/discussions">Discussion forums</a></div></details><!----></nav> <details class="ed-mobile-menu"><summary>Menu <span aria-hidden="true">+</span></summary><nav aria-label="Mobile primary navigation"><details><summary>Certification Profiles</summary><div><a href="/fedramp-design-concepts/i6-editorial/profiles/">Compare certification profiles</a><a href="/fedramp-design-concepts/i6-editorial/20x/">20x and Class A</a><a href="/fedramp-design-concepts/i6-editorial/rev5/">Rev5 requirements and transition</a></div></details> <details><summary>Engineering Resources</summary><div><a href="/fedramp-design-concepts/i6-editorial/engineering/">Build with your engineering team</a><a href="/fedramp-design-concepts/i6-editorial/engineering/#mcp">AI and MCP walkthrough</a><a href="https://www.fedramp.gov/2026/sources/">Official source data</a></div></details> <details><summary>Agency Use</summary><div><a href="/fedramp-design-concepts/i6-editorial/agency-use/">Understand agency use</a><a href="/fedramp-design-concepts/i6-editorial/agency-use/#review">Review a certification package</a></div></details> <details><summary>Certified Products</summary><div><p>Find offerings and check their certification status.</p><a href="/fedramp-design-concepts/i6-editorial/marketplace/">Browse the Marketplace</a><a href="/fedramp-design-concepts/i6-editorial/profiles/#listing-status">Understand listing statuses</a></div></details> <details><summary>Community</summary><div><a href="/fedramp-design-concepts/i6-editorial/community/">Join the conversation</a><a href="https://www.fedramp.gov/events/">Events</a><a href="https://www.fedramp.gov/changelog/">Changelog</a><a href="/fedramp-design-concepts/i6-editorial/rfcs/">Requests for comment</a><a href="https://github.com/FedRAMP/community/discussions">Discussion forums</a></div></details><!----></nav></details></header> <div style="display:contents"><!--[-1--><!--]--> <!--[-1--><!--[--><main id="main-content" class="ft-guide"><header><a href="/fedramp-design-concepts/i6-editorial/">FedRAMP 20x</a><h1>Your mission. Your authorization decision.</h1><p>FedRAMP supplies reusable provider evidence. Your agency decides how to use it.</p></header><div class="ft-guide-body"><section><h2>Begin with the intended use.</h2><p>Define what the service will do, the information involved and your agency’s requirements. Certification is evidence for your decision, not a blanket authorization to operate.</p><a href="https://www.fedramp.gov/2026/agencies/use/">Agency-use overview</a></section><section id="review"><h2>Review the package in context.</h2><ol><li>Check the offering’s certification status, class and scope.</li><li>Review its package and current evidence. Content varies by class.</li><li>Evaluate configuration guidance and responsibilities for your intended use.</li><li>Document your agency’s assessment, authorization and monitoring arrangements.</li></ol><p>Agencies SHOULD NOT authorize Class A use beyond 12 months unless the offering is actively seeking B, C or D.</p><a href="https://www.fedramp.gov/2026/agencies/use/packages/20x/">Read a 20x package</a> · <a href="https://www.fedramp.gov/2026/agencies/use/initial/">Plan initial authorization</a> · <a href="https://www.fedramp.gov/2026/agencies/rules/agency-use/">Agency-use rules</a></section></div></main><!--]--><!--]--><!----></div><!----> <footer class="ed-footer"><a href="/fedramp-design-concepts/i6-editorial/" aria-label="FedRAMP home page"><img src="/fedramp-design-concepts/i6-editorial/fedramp-logo.svg" width="90" height="90" alt="FedRAMP"/></a><nav aria-label="Footer navigation"><a href="/fedramp-design-concepts/i6-editorial/20x/">Start with Class A</a><a href="/fedramp-design-concepts/i6-editorial/agency-use/">Agency use</a><a href="/fedramp-design-concepts/i6-editorial/marketplace/">Marketplace</a><a href="https://www.fedramp.gov/2026/">Rules &amp; guidance</a><a href="https://www.fedramp.gov/legacy/">Legacy documentation</a><a href="https://www.fedramp.gov/join/">Join FedRAMP</a></nav><p>Local design prototype. Current rules govern certification.</p></footer><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_8mtj9z = {
+						base: "/fedramp-design-concepts/i6-editorial",
+						assets: "/fedramp-design-concepts/i6-editorial"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/fedramp-design-concepts/i6-editorial/_app/immutable/entry/start.Dm8JKTAA.js"),
+						import("/fedramp-design-concepts/i6-editorial/_app/immutable/entry/app.BN7H34NI.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 12],
+							data: [{type:"data",data:{menuItems:[{id:"community-updates",text:"Community & Updates",children:[{id:"changelog",text:"Changelog",href:"/changelog/"},{id:"blog",text:"Blog",href:"/blog/1/"},{id:"events",text:"Events",href:"/events/"},{id:"cwg",text:"Community Updates",href:"/community/"},{id:"notices",text:"Public Notices",href:"/notices/"},{id:"rfcs",text:"Requests For Comment",href:"/rfcs/"}]},{id:"rules",text:"Rules & Requirements",children:[{id:"2026",text:"Consolidated Rules for 2026",href:"/2026/",reload:true},{id:"legacy",text:"Legacy Documentation Reference",href:"/legacy/",reload:true}]},{id:"20x",text:"FedRAMP 20x",href:"/20x"},{id:"marketplace",text:"Marketplace",href:"/marketplace"}],projectInfo:{href:"/fedramp-design-concepts/i6-editorial/",logo:{src:"/fedramp-design-concepts/i6-editorial/fedramp-logo-vert.svg",alt:"FedRAMP"}},search:{enabled:true,action:"https://search.usa.gov/search",placeholder:"Search",buttonText:"Search"},heroBannerValues:{blog:{heroBannerHeading:"Focus on FedRAMP® Blog",heroBannerText:"Discover what’s happening in the FedRAMP world.",heroBannerClass:"fedramp-basic-hero-banner"},updates:{changelog:{heroBannerHeading:"FedRAMP Updates Changelog",heroBannerClass:"fedramp-basic-hero-banner"},events:{heroBannerHeading:"FedRAMP Events",heroBannerClass:"fedramp-basic-hero-banner"},community:{heroBannerHeading:"FedRAMP Community Updates",heroBannerClass:"fedramp-basic-hero-banner"},disclaimers:{heroBannerHeading:"FedRAMP Disclaimers",heroBannerClass:"fedramp-basic-hero-banner"},docs:{heroBannerHeading:"FedRAMP Docs",heroBannerClass:"fedramp-basic-hero-banner"},governance:{heroBannerHeading:"FedRAMP Governance",heroBannerText:"The Federal Risk and Authorization Management Program operates in a complex matrix of shared or distributed responsibilities across the federal government. Learn more about who is involved, their responsibilities, and how they interact with FedRAMP.",heroBannerClass:"fedramp-basic-hero-banner"},rfcs:{heroBannerHeading:"Requests for Comment",heroBannerClass:"fedramp-basic-hero-banner"},scope:{heroBannerHeading:"Scope of FedRAMP",heroBannerClass:"fedramp-basic-hero-banner"},shutdown:{heroBannerHeading:"FedRAMP During Government Shutdown",heroBannerClass:"fedramp-basic-hero-banner"}},rev5:{documents:{heroBannerHeading:"FedRAMP Documents & Templates",heroBannerClass:"fedramp-basic-hero-banner"},stakeholders:{heroBannerHeading:"FedRAMP Stakeholders",heroBannerClass:"fedramp-basic-hero-banner"}},schemas:{list:{heroBannerHeading:"FedRAMP JSON Schemas",heroBannerClass:"fedramp-basic-hero-banner"},validator:{heroBannerHeading:"JSON Schema Validator",heroBannerClass:"fedramp-basic-hero-banner"}},brand:{heroBannerHeading:"FedRAMP Brand Guide",heroBannerClass:"fedramp-basic-hero-banner"}}},uses:{url:1},slash:"always"},null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

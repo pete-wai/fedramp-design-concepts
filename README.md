@@ -1,9 +1,11 @@
 # FedRAMP design concepts
 
-Twelve design prototypes: four preserved iteration 4 candidates and eight iteration 5 explorations.
+Twelve iteration 6 concepts in soft blue and white, each with a contrasting dark mode. The twelve earlier candidates remain unchanged at their original URLs.
 
-[View the collection](https://pete-wai.github.io/fedramp-design-concepts/)
+[View iteration 6](https://pete-wai.github.io/fedramp-design-concepts/) · [Archived iteration 5 collection](https://pete-wai.github.io/fedramp-design-concepts/archive/iteration-5/pitch/)
 
-This repository contains compiled static previews and their runtime assets, not the build project. These are design experiments, not an official FedRAMP announcement or live Marketplace. Marketplace/RFC data are dated demo records. Timing and staffing figures are qualified goals, not measured outcomes.
+Compiled static previews only, not the build project. These are design experiments, not an official FedRAMP announcement or live Marketplace. Marketplace/RFC records are dated demo material. Timing and staffing figures are qualified goals, not measured outcomes.
 
-Source and asset restrictions remain in NOTICES.md and each candidate’s license/notice files. No new open-source license is granted.
+Use Light, Dark or System in each site header. Light is the default; each site remembers its own selection. Explicit ?theme=light or ?theme=dark links let reviewers share an appearance.
+
+Retained source and asset restrictions are listed in NOTICES.md and candidate notices. No new open-source license is granted.
