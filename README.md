@@ -1,6 +1,6 @@
 # FedRAMP design concepts
 
-Ten Iteration 9 Current and Fieldwork successors: Pulse, Cadence, Undertow, Confluence, Resonance, Groundwire, Uplink, Contour, Fieldnotes, and Common Ground.
+Twelve Iteration 9 concepts: Pulse, Cadence, Undertow, Confluence, Resonance, Groundwire, Uplink, Contour, Fieldnotes, Common Ground, Sunrise, and Highland.
 
 [Open the collection](https://pete-wai.github.io/fedramp-design-concepts/) · [Iteration 8 archive](https://pete-wai.github.io/fedramp-design-concepts/archive/iteration-8/pitch/)
 

@@ -58,3 +58,7 @@ The supplied FedRAMP source license and retained asset notices accompany each ca
 - [Contour](i9-contour/THIRD_PARTY_NOTICES.md)
 - [Fieldnotes](i9-fieldnotes/THIRD_PARTY_NOTICES.md)
 - [Common Ground](i9-common-ground/THIRD_PARTY_NOTICES.md)
+
+## Iteration 9 additions — Sunrise and Highland
+- [Sunrise](i9-sunrise/THIRD_PARTY_NOTICES.md)
+- [Highland](i9-highland/THIRD_PARTY_NOTICES.md)
