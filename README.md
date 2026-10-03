@@ -1,9 +1,7 @@
 # FedRAMP design concepts
 
-Twelve Iteration 9 concepts: Pulse, Cadence, Undertow, Confluence, Resonance, Groundwire, Uplink, Contour, Fieldnotes, Common Ground, Sunrise, and Highland.
+[Iteration 10](https://pete-wai.github.io/fedramp-design-concepts/) — ten Sunrise landscapes. Light/Dark/System, desktop/mobile, gentle motion with reduced-motion support.
 
-[Open the collection](https://pete-wai.github.io/fedramp-design-concepts/) · [Iteration 8 archive](https://pete-wai.github.io/fedramp-design-concepts/archive/iteration-8/pitch/)
+Iterations 8 and 9 remain available. Earlier public iterations were retired at the owner's request; their history is retained in Git. Compiled static experimental previews only, not the official FedRAMP website. User-supplied metrics are simulated. Protected Marketplace/RFC material is a frozen demonstration.
 
-Compiled static previews only. Experimental campaign copy and simulated next steps; not an official FedRAMP announcement or government service. Each concept supports Light, Dark, and System; System is the default. Earlier concepts remain at their original URLs. Marketplace and RFC material is a frozen demonstration.
-
-See NOTICES.md and candidate notices for source and asset rights. No additional license is granted.
+See NOTICES.md and candidate notices for asset rights.
