@@ -1,11 +1,9 @@
 # FedRAMP design concepts
 
-Twelve iteration 6 concepts in soft blue and white, each with a contrasting dark mode. The twelve earlier candidates remain unchanged at their original URLs.
+Six Iteration 7 landing pages: Declaration, Assembly, Dispatch, Horizon, Signal, and Remix.
 
-[View iteration 6](https://pete-wai.github.io/fedramp-design-concepts/) · [Archived iteration 5 collection](https://pete-wai.github.io/fedramp-design-concepts/archive/iteration-5/pitch/)
+[Open the collection](https://pete-wai.github.io/fedramp-design-concepts/) · [Iteration 6 archive](https://pete-wai.github.io/fedramp-design-concepts/archive/iteration-6/pitch/)
 
-Compiled static previews only, not the build project. These are design experiments, not an official FedRAMP announcement or live Marketplace. Marketplace/RFC records are dated demo material. Timing and staffing figures are qualified goals, not measured outcomes.
+Compiled static previews only. Experimental campaign copy and simulated next steps; not an official FedRAMP announcement or government service. Each concept supports Light, Dark, and System; System is the default. Earlier concepts remain at their original URLs. Marketplace and RFC material is a frozen demonstration.
 
-Use Light, Dark or System in each site header. Light is the default; each site remembers its own selection. Explicit ?theme=light or ?theme=dark links let reviewers share an appearance.
-
-Retained source and asset restrictions are listed in NOTICES.md and candidate notices. No new open-source license is granted.
+See NOTICES.md and candidate notices for source and asset rights. No additional license is granted.

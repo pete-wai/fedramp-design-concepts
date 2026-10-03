@@ -26,3 +26,11 @@ The supplied FedRAMP source license and retained asset notices accompany each ca
 - [Engineered (i5-engineered): source and asset notices](i5-engineered/THIRD_PARTY_NOTICES.md)
 - [Open Sky (i5-open-sky): source and asset notices](i5-open-sky/THIRD_PARTY_NOTICES.md)
 - [Common Ground (i5-common-ground): source and asset notices](i5-common-ground/THIRD_PARTY_NOTICES.md)
+
+## Iteration 7
+- [Declaration](i7-declaration/THIRD_PARTY_NOTICES.md)
+- [Assembly](i7-assembly/THIRD_PARTY_NOTICES.md)
+- [Dispatch](i7-dispatch/THIRD_PARTY_NOTICES.md)
+- [Horizon](i7-horizon/THIRD_PARTY_NOTICES.md)
+- [Signal](i7-signal/THIRD_PARTY_NOTICES.md)
+- [Remix](i7-remix/THIRD_PARTY_NOTICES.md)
