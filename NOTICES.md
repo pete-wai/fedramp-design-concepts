@@ -34,3 +34,15 @@ The supplied FedRAMP source license and retained asset notices accompany each ca
 - [Horizon](i7-horizon/THIRD_PARTY_NOTICES.md)
 - [Signal](i7-signal/THIRD_PARTY_NOTICES.md)
 - [Remix](i7-remix/THIRD_PARTY_NOTICES.md)
+
+## Iteration 8
+- [Current](i8-current/THIRD_PARTY_NOTICES.md)
+- [Atmosphere](i8-atmosphere/THIRD_PARTY_NOTICES.md)
+- [Prism](i8-prism/THIRD_PARTY_NOTICES.md)
+- [Fieldwork](i8-fieldwork/THIRD_PARTY_NOTICES.md)
+- [Momentum](i8-momentum/THIRD_PARTY_NOTICES.md)
+- [Constellation](i8-constellation/THIRD_PARTY_NOTICES.md)
+- [Fabric](i8-fabric/THIRD_PARTY_NOTICES.md)
+- [Civic Mosaic](i8-civic-mosaic/THIRD_PARTY_NOTICES.md)
+- [Relay](i8-relay/THIRD_PARTY_NOTICES.md)
+- [Panorama](i8-panorama/THIRD_PARTY_NOTICES.md)
