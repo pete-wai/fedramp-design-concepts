@@ -34,3 +34,17 @@ Official FedRAMP marks and inherited assets retain their existing notices. New I
 - [i9-sunrise](i9-sunrise/THIRD_PARTY_NOTICES.md)
 - [i9-undertow](i9-undertow/THIRD_PARTY_NOTICES.md)
 - [i9-uplink](i9-uplink/THIRD_PARTY_NOTICES.md)
+
+## Iteration 11
+
+Radiance descendants with original native hub artwork. Official government source material is attributed per item; GitHub participant posts are summarized and linked, not reproduced. Existing inherited licenses remain in force.
+- [i11-briefing](i11-briefing/THIRD_PARTY_NOTICES.md)
+- [i11-chronicle](i11-chronicle/THIRD_PARTY_NOTICES.md)
+- [i11-agenda](i11-agenda/THIRD_PARTY_NOTICES.md)
+- [i11-seven-desks](i11-seven-desks/THIRD_PARTY_NOTICES.md)
+- [i11-commons](i11-commons/THIRD_PARTY_NOTICES.md)
+- [i11-ledger](i11-ledger/THIRD_PARTY_NOTICES.md)
+- [i11-topic-guide](i11-topic-guide/THIRD_PARTY_NOTICES.md)
+- [i11-weekly-digest](i11-weekly-digest/THIRD_PARTY_NOTICES.md)
+- [i11-switchboard](i11-switchboard/THIRD_PARTY_NOTICES.md)
+- [i11-reading-room](i11-reading-room/THIRD_PARTY_NOTICES.md)
