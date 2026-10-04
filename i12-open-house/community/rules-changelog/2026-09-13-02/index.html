@@ -1,0 +1,127 @@
+<!-- app.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/fedramp-design-concepts/i12-open-house/favicons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 300;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i12-open-house/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 400;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i12-open-house/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 700;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i12-open-house/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2') format('woff2');
+      }
+    </style>
+
+    <script>/* Copy into each variant's app.html head, replacing i12-open-house. Runs before paint. */
+(function () {
+  var key = 'fedramp-design-concepts:i8:i12-open-house:theme';
+  var valid = function (value) { return ['light', 'dark', 'system'].includes(value); };
+  var preference = 'system';
+  try { var stored = localStorage.getItem(key); if (valid(stored)) preference = stored; } catch (_) {}
+  var url = new URL(location.href);
+  var requested = url.searchParams.get('theme');
+  if (valid(requested)) { preference = requested; try { localStorage.setItem(key, preference); } catch (_) {} }
+  var media = matchMedia('(prefers-color-scheme: dark)');
+  function apply() {
+    document.documentElement.dataset.theme = preference === 'system' ? (media.matches ? 'dark' : 'light') : preference;
+    document.documentElement.dataset.themePreference = preference;
+  }
+  window.fedrampTheme = {
+    get: function () { return preference; },
+    set: function (value) {
+      if (!valid(value)) return;
+      preference = value;
+      try { localStorage.setItem(key, value); } catch (_) {}
+      var current = new URL(location.href);
+      if (current.searchParams.has('theme')) { current.searchParams.delete('theme'); history.replaceState(history.state, '', current); }
+      apply();
+    }
+  };
+  media.addEventListener('change', function () { if (preference === 'system') apply(); });
+  apply();
+})();
+</script>
+<style>@font-face{font-family:'Public I7';font-weight:400;src:url('/fedramp-design-concepts/i12-open-house/uswds/fonts/public-sans/PublicSans-Regular.woff2')}@font-face{font-family:'Public I7';font-weight:700 800;src:url('/fedramp-design-concepts/i12-open-house/uswds/fonts/public-sans/PublicSans-Bold.woff2')}@font-face{font-family:'Public I7';font-weight:900;src:url('/fedramp-design-concepts/i12-open-house/uswds/fonts/public-sans/PublicSans-Black.woff2')}@font-face{font-family:'Merri I7';font-weight:400;src:url('/fedramp-design-concepts/i12-open-house/uswds/fonts/merriweather/Latin-Merriweather-Regular.woff2')}@font-face{font-family:'Merri I7';font-weight:700 900;src:url('/fedramp-design-concepts/i12-open-house/uswds/fonts/merriweather/Latin-Merriweather-Bold.woff2')}@font-face{font-family:'Merri I7';font-weight:400 900;font-style:italic;src:url('/fedramp-design-concepts/i12-open-house/uswds/fonts/merriweather/Latin-Merriweather-BoldItalic.woff2')}</style>
+<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/entry/start.BEa7AKC_.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BWQlhxb8.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/DT3cB-3n.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/B7UbPbqL.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/C7wkluqE.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/-UyI9lYi.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BwmVc454.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/entry/app.B4Qz5H87.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/Dp1pzeXC.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/Bzak7iHL.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/Cwe7WxTD.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/CNxA6jSQ.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/qwK_1wY_.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/DVkRH4aH.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/zgAM12t3.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/nodes/0.sdenXf9Z.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/CPo-oHq-.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BeTtFRYL.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/wCxFq2VJ.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/wdKzpROC.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/CGxXKZAI.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/CBValF8G.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/R2Aalf5P.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BfdFNGLg.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/C9Ew_qAr.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BCi7ibrc.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BuDq-QxP.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/nodes/14.B8M4CxsF.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/BvvIB42X.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/chunks/DT5XSg7A.js" rel="modulepreload">
+		<!--12qhfyh--><meta name="description" content="The Federal Risk and Authorization Management Program, or FedRAMP, is a government-wide program that provides a standardized approach to security assessment."/> <!--[-1--><!--]--> <meta property="og:type" content="website"/> <meta property="og:title" content="Fedramp Design Concepts I12 Open House Community Rules Changelog 2026 09 13 02"/> <meta property="og:description" content="The Federal Risk and Authorization Management Program, or FedRAMP, is a government-wide program that provides a standardized approach to security assessment."/> <meta property="og:url" content="http://sveltekit-prerender/fedramp-design-concepts/i12-open-house/community/rules-changelog/2026-09-13-02/"/> <meta name="twitter:title" content="Fedramp Design Concepts I12 Open House Community Rules Changelog 2026 09 13 02"/> <meta name="twitter:description" content="The Federal Risk and Authorization Management Program, or FedRAMP, is a government-wide program that provides a standardized approach to security assessment."/> <meta name="twitter:card" content="summary_large_image"/> <meta property="og:image" content="https://www.fedramp.gov/fedramp-design-concepts/i12-open-house/thumbnail-image.png"/> <meta name="twitter:image" content="https://www.fedramp.gov/fedramp-design-concepts/i12-open-house/thumbnail-image.png"/> <meta property="og:logo" content="https://www.fedramp.gov/fedramp-logo-inverse.svg"/><!----><!--1vbb9i8--><!----><title>CR26 2026.09.13.02 · FedRAMP Community</title>
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/assets/0.D5BXHYLn.css" rel="stylesheet">
+		<link href="/fedramp-design-concepts/i12-open-house/_app/immutable/assets/data.kiTaiKnX.css" rel="stylesheet">
+  <style>.i11.i10 .agency-decision{padding-bottom:50px}.i11.i10 .assurance{padding-top:50px}</style></head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[1--><!--[-1--><!--[--><div class="i9 hub12 open-house" id="top"><a class="skip" href="#main">Skip to main content</a> <header class="community-masthead"><a href="/fedramp-design-concepts/i12-open-house/" aria-label="FedRAMP homepage"><img class="logo-light" src="/fedramp-design-concepts/i12-open-house/fedramp-logo.svg" alt="FedRAMP" width="132" height="44"/><img class="logo-dark" src="/fedramp-design-concepts/i12-open-house/fedramp-logo-inverse.svg" alt="FedRAMP" width="132" height="44"/></a><a class="masthead-title" href="/fedramp-design-concepts/i12-open-house/community/">Community</a><label hidden=""><span class="sr-only">Appearance</span><select aria-label="Appearance"><option value="system" selected="">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label></header> <nav class="topbar" aria-label="Community navigation"><a href="/fedramp-design-concepts/i12-open-house/community/">Hub</a><a href="/fedramp-design-concepts/i12-open-house/community/weekly/">Weekly editions</a><a href="/fedramp-design-concepts/i12-open-house/community/#channels">Explore channels</a><a href="#top">Top ↑</a></nav> <main id="main" tabindex="-1"><article class="item-detail"><header class="issue-opening"><a href="/fedramp-design-concepts/i12-open-house/community/rules-changelog/">← CR26 changelog</a><h1>CR26 2026.09.13.02</h1><p class="edition-date">Sep 13, 2026 · Rules &amp; content</p><p class="opening-deck">Corrections and clarifications across the rules site, including structured timeframe metadata, applicability fields and Rev5 grace dates.</p><a class="edition-link" href="https://www.fedramp.gov/2026/changelog/#2026091302-september-13-2026">Read the original source ↗</a></header><div class="article-body"><!--[--><h2 id="release-notes">Release notes<a aria-hidden="true" tabindex="-1" class="heading-auto-link" href="#release-notes"><span class="icon icon-link"></span></a></h2> <p>This update fixes several typos and minor grammatical issues in the narrative text on the Consolidated
+Rules site, and integrates several small readability and clarity tweaks in various FedRAMP Rules.</p> <p>Several of these updates were contributed by members of the FedRAMP Community on GitHub, including:</p> <ul><li>@AllanTaylor314: <a href="https://github.com/FedRAMP/2026/issues/96" rel="nofollow">Assessor page says listing is an endorsement, inverting the meaning (+ other spelling, grammar, and punctuation fixes)</a></li> <li>@ktalons: <a href="https://github.com/FedRAMP/community/discussions/164" rel="nofollow">Should these five rules carry timeframe_type/timeframe_num?</a></li> <li>@tnnrjmsn-eit: <a href="https://github.com/FedRAMP/2026/discussions/113#discussioncomment-18192379" rel="nofollow">incident-evaluation-and-communication</a></li> <li>@mgcas-roxanne: <a href="https://github.com/FedRAMP/2026/discussions/110#discussioncomment-18022928" rel="nofollow">agency-use</a></li></ul> <h3 id="content-changes">Content Changes<a aria-hidden="true" tabindex="-1" class="heading-auto-link" href="#content-changes"><span class="icon icon-link"></span></a></h3> <ul><li>The force of the rule (<code>MUST</code>, <code>MUST NOT</code>, <code>SHOULD</code>, <code>SHOULD NOT</code>, <code>MAY</code>) now includes a link to the definition with an instant preview any time it appears in the main rule statement.</li> <li><a href="https://www.fedramp.gov/2026/rules/#force-of-the-rule" rel="nofollow">Using the Consolidated Rules</a> Force of the Rule section was moved from a table into a series of h4 admonitions for readability; this is the same information that’s now also in FedRAMP Definitions.</li> <li>Instant preview links no longer have the mouse-pointer icon  after them - this might make it a bit less obvious that there is an instant preview but removes a lot of visual clutter.</li></ul> <h3 id="rules-changes">Rules Changes<a aria-hidden="true" tabindex="-1" class="heading-auto-link" href="#rules-changes"><span class="icon icon-link"></span></a></h3> <ul><li><code>AGU-AGC-LIA</code>: Updates the Agency Liaison Program reference URL from <code>/preview/2026/agencies/support/liaisons</code> to <code>/2026/agencies/support/liaisons</code>.</li> <li><code>AGU-USE-ABU</code>: Updates the authorization guidance reference URL to <code>https://www.fedramp.gov/2026/agencies/use</code>.</li> <li><code>CCM-OCR-AVL</code>: Clarifies that listed Ongoing Certification Report contents are required “if applicable,” depending on certification type or class, and adds structured metadata for the existing 3-month reporting interval.</li> <li><code>CCM-QTR-SAR</code>: Adds structured timeframe metadata for the existing recommendation to schedule Quarterly Reviews 3–10 business days after releasing an Ongoing Certification Report.</li> <li><code>CPO-CSO-OVR</code>, <code>CPO-CSO-MTD</code>, <code>CPO-CSO-OSA</code>, and <code>CPO-CSF-CPM</code>: Moves the Rev5 default grace date from January 1 to July 1, 2027, at <code>FRR.CPO.info.rev5.effective.date.grace.default</code>, retaining <code>until_next_assessment: true</code>.</li> <li><code>CPO-CSF-CPM</code>: Structurally narrows Rev5 subset applicability from classes A–D to B–D at <code>FRR.CPO.info.rev5.subsets.CSF.applicability.classes</code>.</li> <li><code>FRC-CCL-UCC</code>, <code>FRC-CCL-DCC</code>, and <code>FRC-CCL-DNP</code>: Structurally narrows certification-class-change applicability from classes A–D to B–D at <code>FRR.FRC.info.subsets.CCL.applicability.classes</code>; upgrade and downgrade notes still mention transitions involving Class A.</li> <li><code>IEC-CSO-OIR</code>: Removes the duplicated “the” from all four class-specific incident-reporting statements.</li> <li><code>IVV-CSF-MCA</code>: Adds structured metadata for the existing requirement to include all applicable Rev5 controls in independent assessments every 3 years.</li> <li><code>MKT-CAS-RFR</code>: Adds structured metadata for the existing requirement that advisors respond to FedRAMP or GSA requests within 5 business days.</li> <li><code>MKT-IIP-DLA</code>: Adds structured metadata for the existing 2-year deadline to demonstrate a scheduled Class B, C, or D assessment after initial listing.</li> <li><code>VDR-TFR-NMV</code>: Adds structured metadata for the existing requirement to verify and validate non-machine-based information resources at least every 3 months.</li> <li>Adds definition <code>FRD-MST</code> (MUST): an absolute requirement that must be met and documented, with failure potentially requiring corrective action or denial of initial or ongoing certification.</li> <li>Adds definition <code>FRD-MNT</code> (MUST NOT): an absolute prohibition that must be observed and documented, with the same potential consequences for failure.</li> <li>Adds definition <code>FRD-SHD</code> (SHOULD): departures may have valid reasons, but parties must carefully weigh the implications and document their decisions.</li> <li>Adds definition <code>FRD-SNT</code> (SHOULD NOT): the discouraged action may be justified in particular circumstances, but parties must carefully weigh the implications and document their decisions.</li> <li>Adds definition <code>FRD-MAY</code> (MAY): the rule is optional, and parties should explain their decisions in security documentation.</li></ul><!--]--><!----></div><!--[-1--><!--]--><!--[-1--><!--]--><p class="source-note">Saved source material for a design prototype. Discussion, guidance and proposals do not replace the published rules. Follow the original source for current context.</p></article><!----></main> <footer class="community-footer"><div><h2>Keep the conversation going.</h2><p>Meet, read, ask and contribute.</p><a href="https://github.com/FedRAMP/community/discussions">Join the community on GitHub ↗</a></div><div><p>Saved October 4, 2026.<br/>Experimental design, not the official website.<br/>Weekly editions are prototype editorial summaries.</p><a href="/fedramp-design-concepts/i12-open-house/">FedRAMP homepage</a> · <a href="#top">Back to top</a></div></footer></div><!--]--><!--]--><!----><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_waa93k = {
+						base: "/fedramp-design-concepts/i12-open-house",
+						assets: "/fedramp-design-concepts/i12-open-house"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/fedramp-design-concepts/i12-open-house/_app/immutable/entry/start.BEa7AKC_.js"),
+						import("/fedramp-design-concepts/i12-open-house/_app/immutable/entry/app.B4Qz5H87.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 14],
+							data: [{type:"data",data:{menuItems:[{id:"community-updates",text:"Community & Updates",children:[{id:"changelog",text:"Changelog",href:"/changelog/"},{id:"blog",text:"Blog",href:"/blog/1/"},{id:"events",text:"Events",href:"/events/"},{id:"cwg",text:"Community Updates",href:"/community/"},{id:"notices",text:"Public Notices",href:"/notices/"},{id:"rfcs",text:"Requests For Comment",href:"/rfcs/"}]},{id:"rules",text:"Rules & Requirements",children:[{id:"2026",text:"Consolidated Rules for 2026",href:"/2026/",reload:true},{id:"legacy",text:"Legacy Documentation Reference",href:"/legacy/",reload:true}]},{id:"20x",text:"FedRAMP 20x",href:"/20x"},{id:"marketplace",text:"Marketplace",href:"/marketplace"}],projectInfo:{href:"/fedramp-design-concepts/i12-open-house/",logo:{src:"/fedramp-design-concepts/i12-open-house/fedramp-logo-vert.svg",alt:"FedRAMP"}},search:{enabled:true,action:"https://search.usa.gov/search",placeholder:"Search",buttonText:"Search"},heroBannerValues:{blog:{heroBannerHeading:"Focus on FedRAMP® Blog",heroBannerText:"Discover what’s happening in the FedRAMP world.",heroBannerClass:"fedramp-basic-hero-banner"},updates:{changelog:{heroBannerHeading:"FedRAMP Updates Changelog",heroBannerClass:"fedramp-basic-hero-banner"},events:{heroBannerHeading:"FedRAMP Events",heroBannerClass:"fedramp-basic-hero-banner"},community:{heroBannerHeading:"FedRAMP Community Updates",heroBannerClass:"fedramp-basic-hero-banner"},disclaimers:{heroBannerHeading:"FedRAMP Disclaimers",heroBannerClass:"fedramp-basic-hero-banner"},docs:{heroBannerHeading:"FedRAMP Docs",heroBannerClass:"fedramp-basic-hero-banner"},governance:{heroBannerHeading:"FedRAMP Governance",heroBannerText:"The Federal Risk and Authorization Management Program operates in a complex matrix of shared or distributed responsibilities across the federal government. Learn more about who is involved, their responsibilities, and how they interact with FedRAMP.",heroBannerClass:"fedramp-basic-hero-banner"},rfcs:{heroBannerHeading:"Requests for Comment",heroBannerClass:"fedramp-basic-hero-banner"},scope:{heroBannerHeading:"Scope of FedRAMP",heroBannerClass:"fedramp-basic-hero-banner"},shutdown:{heroBannerHeading:"FedRAMP During Government Shutdown",heroBannerClass:"fedramp-basic-hero-banner"}},rev5:{documents:{heroBannerHeading:"FedRAMP Documents & Templates",heroBannerClass:"fedramp-basic-hero-banner"},stakeholders:{heroBannerHeading:"FedRAMP Stakeholders",heroBannerClass:"fedramp-basic-hero-banner"}},schemas:{list:{heroBannerHeading:"FedRAMP JSON Schemas",heroBannerClass:"fedramp-basic-hero-banner"},validator:{heroBannerHeading:"JSON Schema Validator",heroBannerClass:"fedramp-basic-hero-banner"}},brand:{heroBannerHeading:"FedRAMP Brand Guide",heroBannerClass:"fedramp-basic-hero-banner"}}},uses:{url:1},slash:"always"},null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

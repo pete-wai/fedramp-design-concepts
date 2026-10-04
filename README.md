@@ -1,5 +1,5 @@
 # FedRAMP design concepts
 
-[Iteration 11](https://pete-wai.github.io/fedramp-design-concepts/) — one refined Radiance homepage and ten Community Hub approaches. Seven source channels, static October 3 snapshot, local section and individual detail pages.
+[Iteration 12](https://pete-wai.github.io/fedramp-design-concepts/) — ten community hubs with weekly synthesis and channel discovery. Static October 4, 2026 snapshot. Three historical prototype Monday editions. Radiance homepage held constant.
 
-Iterations 8–10 remain available. Experimental previews, not the official FedRAMP website. Homepage certification metrics are illustrative. Source updates require a deliberate new snapshot. See NOTICES.md for asset rights.
+Iteration 11 retained; Iteration 10 and earlier retired from this public release. See Git history and local release snapshots for prior work. This is not the official FedRAMP website. No automatic publishing, analytics or email collection. See NOTICES.md.
