@@ -1,0 +1,3 @@
+import fs from 'node:fs';import {spawnSync} from 'node:child_process';
+for(const task of ['check','build']){const r=spawnSync('npm',['run',task],{cwd:'prototype',env:{...process.env,BASEURL:'/fedramp-design-concepts/i13-open-house'},stdio:'inherit'});if(r.status!==0)process.exit(r.status||1);}
+fs.rmSync('i13-open-house',{recursive:true,force:true});fs.cpSync('prototype/build','i13-open-house',{recursive:true});fs.cpSync('prototype/licenses','i13-open-house/licenses',{recursive:true});fs.copyFileSync('prototype/THIRD_PARTY_NOTICES.md','i13-open-house/THIRD_PARTY_NOTICES.md');console.log('Current build replaced. Review changes before committing.');

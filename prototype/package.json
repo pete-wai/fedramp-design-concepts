@@ -1,0 +1,54 @@
+{
+  "name": "fedramp-prototype",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "svelte-kit sync && vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@sveltejs/adapter-static": "3.0.10",
+    "@sveltejs/kit": "2.70.3",
+    "@sveltejs/vite-plugin-svelte": "5.1.1",
+    "@types/luxon": "3.7.5",
+    "@types/node": "22.20.1",
+    "@types/uswds__uswds": "3.11.1",
+    "@types/validator": "13.15.10",
+    "@uswds/uswds": "3.14.0",
+    "autoprefixer": "10.5.4",
+    "hast-util-sanitize": "5.0.2",
+    "mdsvex": "0.12.8",
+    "rehype-autolink-headings": "7.1.0",
+    "rehype-slug": "6.0.0",
+    "remark": "15.0.1",
+    "remark-html": "16.0.1",
+    "sass": "1.103.1",
+    "sass-embedded": "1.103.1",
+    "svelte": "5.56.10",
+    "svelte-check": "4.7.6",
+    "typescript": "5.9.3",
+    "vite": "6.4.3",
+    "@axe-core/playwright": "4.13.0"
+  },
+  "dependencies": {
+    "@rimbu/bimultimap": "2.1.9",
+    "@tanstack/table-core": "8.21.3",
+    "dompurify": "3.4.14",
+    "fuse.js": "7.5.0",
+    "luxon": "3.7.2",
+    "validator": "13.15.35",
+    "virtua": "0.49.3",
+    "zod": "4.4.3",
+    "devalue": "5.9.2"
+  },
+  "engines": {
+    "node": "24.21.0",
+    "npm": "11.19.0"
+  },
+  "packageManager": "npm@11.19.0"
+}

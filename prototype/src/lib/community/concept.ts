@@ -1,0 +1,1 @@
+export const concept = {"id": "i12-open-house", "slug": "open-house", "name": "Open House", "argument": "Come for the updates. Stay for the exchange.", "form": "Events and participation verbs lead; warm broad panels transition into the weekly conversation.", "parent": "i11-briefing"};

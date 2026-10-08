@@ -1,5 +1,11 @@
-# FedRAMP design concepts
+# FedRAMP interactive planning
 
-[Iteration 12](https://pete-wai.github.io/fedramp-design-concepts/) — ten community hubs with weekly synthesis and channel discovery. Static October 4, 2026 snapshot. Three historical prototype Monday editions. Radiance homepage held constant.
+[Open Iteration 13](https://pete-wai.github.io/fedramp-design-concepts/) · [Community Hub](https://pete-wai.github.io/fedramp-design-concepts/i13-open-house/community/)
 
-Iteration 11 retained; Iteration 10 and earlier retired from this public release. See Git history and local release snapshots for prior work. This is not the official FedRAMP website. No automatic publishing, analytics or email collection. See NOTICES.md.
+**Basic prototyping for interactive planning. Not the official FedRAMP website.**
+
+Iteration 13 selects Open House from the ten Iteration 12 community concepts. It connects the Radiance homepage and Community Hub to clearly labeled Engineering Resources and Agency Use placeholders. The overview explains the hypotheses and next decisions. Iteration 12 remains available for comparison; prior iterations are removed from this published collection and recoverable in Git history.
+
+Editable source is in `prototype/`. Start with [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md). The source, lockfile and generated Pages output are included together.
+
+Community content remains a dated October 4, 2026 snapshot. Weekly editions are sample summaries, not a scheduled service. Homepage metrics are illustrative. No analytics, submissions, email capture or automated refresh. See [asset notices](NOTICES.md).

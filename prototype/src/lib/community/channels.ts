@@ -1,0 +1,13 @@
+export const channels = [
+{id:'events',name:'Events',action:'Find your next meeting',description:'Meet FedRAMP and the community in public sessions. Bring questions, hear program updates and return to recordings afterward.',url:'https://www.fedramp.gov/events/'},
+{id:'notices',name:'Notices',action:'Read public notices',description:'Dedicated announcements that need a stable place to be referenced, including program actions and important operational updates.',url:'https://www.fedramp.gov/notices/'},
+{id:'blogs',name:'Blogs',action:'Read the program perspective',description:'The bigger picture: program progress, major developments and the thinking behind FedRAMP initiatives.',url:'https://www.fedramp.gov/blog/1/'},
+{id:'changelog',name:'Website changelog',action:'Track website changes',description:'A dated record of significant changes across FedRAMP.gov, with links to the material that changed.',url:'https://www.fedramp.gov/changelog/'},
+{id:'rules-changelog',name:'CR26 changelog',action:'Explore CR26 releases',description:'Versioned release notes for the Consolidated Rules, distinguishing changes to rules, explanatory content and supporting tools.',url:'https://www.fedramp.gov/2026/changelog/'},
+{id:'rfcs',name:'Requests for comment',action:'Contribute formal feedback',description:'Read proposed changes and contribute through their designated public-comment process before the deadline.',url:'https://www.fedramp.gov/rfcs/'},
+{id:'discussions',name:'Community discussions',action:'Join the conversation',description:'Public questions, technical exchanges and shared experience. Read the replies, add context and learn with other practitioners.',url:'https://github.com/FedRAMP/community/discussions'},
+{id:'cr26-discussions',name:'CR26 page discussions',action:'Follow comments on the rules',description:'Questions and replies connected to specific Consolidated Rules pages. Explore the exchange alongside the published source.',url:'https://github.com/FedRAMP/2026/discussions'},
+{id:'help',name:'Help articles',action:'Find a practical explanation',description:'Focused explanations from the Help Center. Use these alongside the published rules and their applicability.',url:'https://help.fedramp.gov/hc/en-us'},
+{id:'recordings',name:'Recordings',action:'Catch up on a session',description:'Watch sessions linked from official FedRAMP event pages. Keep the meeting date and the context of the discussion in view.',url:'https://www.youtube.com/c/FedRAMP'}
+];
+export const formatDate=(s:string)=>new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:s.includes('T')?'America/New_York':'UTC'}).format(new Date(s.includes('T')?s:s+'T12:00:00Z'));

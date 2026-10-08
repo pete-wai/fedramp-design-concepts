@@ -1,0 +1,244 @@
+/* styles/partials/_adjustments.scss */
+// Targeted typography adjustments and other specific tweaks
+// especially to pages generated from Markdown (which we cannot directly add CSS classes to)
+@use '@uswds/uswds/src/stylesheets/uswds' as uswds;
+
+/* For applying .usa-table class to <table> elements added in Markdown files */
+table {
+  @extend .usa-table;
+}
+
+blockquote {
+  margin-left: 0px;
+  padding-left: uswds.units(1);
+  border-left: uswds.units(2px) solid uswds.color('base-light');
+}
+
+/* Code highlighting */
+/* ----------------- */
+code,
+kbd,
+pre,
+samp {
+  @include uswds.u-font('mono', 'sm');
+  @include uswds.u-line-height('mono', 5);
+}
+
+h1 {
+  code,
+  kbd,
+  pre,
+  samp {
+    @include uswds.h1;
+    @include uswds.u-font-family('mono');
+  }
+}
+
+h2 {
+  code,
+  kbd,
+  pre,
+  samp {
+    @include uswds.h2;
+    @include uswds.u-font-family('mono');
+  }
+}
+
+h3 {
+  code,
+  kbd,
+  pre,
+  samp {
+    @include uswds.h3;
+    @include uswds.u-font-family('mono');
+  }
+}
+
+h4 {
+  code,
+  kbd,
+  pre,
+  samp {
+    @include uswds.h4;
+    @include uswds.u-font-family('mono');
+  }
+}
+
+h5 {
+  code,
+  kbd,
+  pre,
+  samp {
+    @include uswds.h5;
+    @include uswds.u-font-family('mono');
+  }
+}
+
+h6 {
+  code,
+  kbd,
+  pre,
+  samp {
+    @include uswds.h6;
+    @include uswds.u-font-family('mono');
+  }
+}
+
+/* Fix code highlighting in alerts */
+@include uswds.at-media('desktop') {
+  .usa-alert .usa-alert__body {
+    @include uswds.u-padding-x(5);
+  }
+}
+@include uswds.at-media('desktop') {
+  .usa-alert--no-icon .usa-alert__body {
+    @include uswds.u-padding-x(2);
+  }
+}
+.usa-alert {
+  &--success {
+    p code {
+      background-color: uswds.color('success-light');
+    }
+  }
+  &--warning {
+    p code {
+      background-color: uswds.color('warning-light');
+    }
+  }
+  &--error {
+    p code {
+      background-color: uswds.color('error-light');
+    }
+  }
+  &--info {
+    p code {
+      background-color: uswds.color('info-light');
+    }
+  }
+  &--emergency {
+    p code {
+      background-color: uswds.color('emergency');
+    }
+  }
+}
+
+.usa-prose > p + *,
+p + * {
+  margin-top: 0.75em;
+}
+
+/* Used in /blog posts to reduce gap between header and blog image */
+.usa-prose > * + h1,
+.usa-prose > * + h2,
+.usa-prose > * + h3,
+.usa-prose > * + h4,
+.usa-prose > * + h5,
+.usa-prose > * + h6,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 0.75em;
+}
+
+.usa-prose > p {
+  max-width: none;
+}
+
+/* Highlight broken links */
+a.broken {
+  background: #ff0;
+  border: 2px solid #f00;
+  padding: 0.1em 0.2em;
+}
+
+/* Font options for headings */
+h1 sans {
+  @include uswds.h1;
+  @include uswds.u-font-family('sans');
+}
+
+h2 sans {
+  @include uswds.h2;
+  @include uswds.u-font-family('sans');
+}
+
+h3 {
+  @include uswds.h3;
+  @include uswds.u-font-family('sans');
+}
+
+h4 sans {
+  @include uswds.h4;
+  @include uswds.u-font-family('sans');
+}
+
+h5 sans {
+  @include uswds.h5;
+  @include uswds.u-font-family('sans');
+}
+
+h6 sans {
+  @include uswds.h6;
+  @include uswds.u-font-family('sans');
+}
+
+// Override USWDS font-display for better FCP performance
+@font-face {
+  font-family: 'Source Sans Pro Web';
+  font-style: normal;
+  font-weight: 300;
+  font-display: optional;
+  src: url('/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url('/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Web';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url('/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather Web';
+  font-style: normal;
+  font-weight: 300;
+  font-display: optional;
+  src: url('/uswds/fonts/merriweather/Latin-Merriweather-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url('/uswds/fonts/merriweather/Latin-Merriweather-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Merriweather Web';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url('/uswds/fonts/merriweather/Latin-Merriweather-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto Mono Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url('/uswds/fonts/roboto-mono/roboto-mono-v5-latin-regular.woff2') format('woff2');
+}

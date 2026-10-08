@@ -1,0 +1,1504 @@
+{
+  "title": "FedRAMP Updates Changelog",
+  "entries": [
+    {
+      "id": 94,
+      "date": "2026-09-13",
+      "details": "Updated Consolidated Rules for 2026 with several typo fixes, minor clarifications, and usability improvements.",
+      "links": [
+        {
+          "name": "Consolidated Rules for 2026 Changelog",
+          "link": "/2026/changelog/#2026091302-september-13-2026",
+          "change-info": ""
+        }
+      ],
+      "tag": "Rules"
+    },
+    {
+      "id": 93,
+      "date": "2026-09-09",
+      "details": "Opened 2 new Requests for Comment.",
+      "links": [
+        {
+          "name": "RFC-0033 FedRAMP 20x Phase 4 Development Tracks for 20x Class D",
+          "link": "/rfcs/0033",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "RFC-0034 Technical Advisory Group Changes",
+          "link": "/rfcs/0034",
+          "change-info": "",
+          "status": "opened"
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 92,
+      "date": "2026-08-06",
+      "details": "Opened a new Request for Comment on Offerings By Government.",
+      "links": [
+        {
+          "name": "RFC-0032 Offerings By Government",
+          "link": "/rfcs/0032",
+          "change-info": "",
+          "status": "opened"
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 91,
+      "date": "2026-07-30",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "FedRAMP Certification Paths are Heating Up",
+          "link": "/2026-07-30-fedramp-certification-paths-are-heating-up",
+          "change-info": ""
+        }
+      ],
+      "tag": "Blog"
+    },
+    {
+      "id": 90,
+      "date": "2026-07-22",
+      "details": "Added Public Notice 16 for results of the Quarterly FedRAMP Security Inbox Test",
+      "links": [
+        {
+          "name": "Outcome from the FY26 Q4 FedRAMP Security Inbox Test",
+          "link": "/notices/0016",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 89,
+      "date": "2026-07-17",
+      "details": "Updated the FedRAMP Marketplace for CR26 changes: added a CSP lifecycle Phase field (Initial Implementation / Ongoing Certification), a new \"FedRAMP Certified (In Remediation)\" status, a clear Corrective Action Plan (CAP) indicator on product pages, and a Certification History event log on each product page. Reuse authorization metrics are no longer shown publicly.",
+      "links": [
+        {
+          "name": "FedRAMP Marketplace",
+          "link": "/marketplace",
+          "change-info": ""
+        },
+        {
+          "name": "Marketplace Changelog",
+          "link": "/marketplace/changelog",
+          "change-info": ""
+        }
+      ],
+      "tag": "Marketplace"
+    },
+    {
+      "id": 88,
+      "date": "2026-07-15",
+      "details": "Added July 2026 Community Updates recordings.",
+      "links": [
+        {
+          "name": "July 2026 20x Community Updates Meeting",
+          "link": "/event/20x-cwg-2026-07-08/"
+        },
+        {
+          "name": "July 2026 Rev5 Community Updates Meeting",
+          "link": "/event/rev5-cwg-2026-07-01/"
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "date": "2026-07-15",
+      "details": "New JSON Schema Validator that runs entirely in your browser.",
+      "links": [
+        {
+          "name": "JSON Schema Validator",
+          "link": "/schemas/validator",
+          "change-info": ""
+        }
+      ],
+      "tag": "Website"
+    },
+    {
+      "id": 86,
+      "date": "2026-07-14",
+      "details": "Updated Consolidated Rules for 2026 to clarify some FedRAMP rules and correct some issues in the FedRAMP JSON schemas",
+      "links": [
+        {
+          "name": "Consolidated Rules for 2026 Changelog",
+          "link": "/2026/changelog/#2026071401-july-14-2026",
+          "change-info": ""
+        }
+      ],
+      "tag": "Rules"
+    },
+    {
+      "id": 85,
+      "date": "2026-07-07",
+      "details": "Added Public Notice 15 for Quarterly FedRAMP Security Inbox Test.",
+      "links": [
+        {
+          "name": "Emergency Test: FY26 Q4 FedRAMP Security Inbox Test",
+          "link": "/notices/0015/",
+          "change-info": ""
+        }
+      ],
+      "tag": "Rules"
+    },
+    {
+      "id": 84,
+      "date": "2026-06-25",
+      "details": "Updated Consolidated Rules for 2026 to version 2026.06.25.01 and added a mini-game.",
+      "links": [
+        {
+          "name": "Consolidated Rules for 2026 Changelog",
+          "link": "/2026/changelog/#2026062501-june-25-2026",
+          "change-info": ""
+        },
+        {
+          "name": "RAMPpardy!",
+          "link": "/trivia",
+          "change-info": ""
+        }
+      ],
+      "tag": "Rules"
+    },
+    {
+      "id": 83,
+      "date": "2026-06-25",
+      "details": "Published a new blog post and hopefully fixed a svelte router issue that was causing links to /2026, /legacy, and /join from within fedramp.gov to throw a 404",
+      "links": [
+        {
+          "name": "Propelling Change: FedRAMP Launches Consolidated Rules of 2026",
+          "link": "/2026-06-25-propelling-change-fedramp-launches-consolidated-rules-for-2026",
+          "change-info": ""
+        }
+      ],
+      "tag": "Blog"
+    },
+    {
+      "id": 82,
+      "date": "2026-06-24",
+      "details": "FedRAMP Consolidated Ruleset for 2026 (CR26) is now released!",
+      "links": [
+        {
+          "name": "New centralized FedRAMP rules website",
+          "link": "/2026",
+          "change-info": "New route"
+        },
+        {
+          "name": "Rev5 and 20x Pilot documentation moved to /legacy",
+          "link": "/legacy",
+          "change-info": "New route"
+        },
+        {
+          "name": "Redesigned FedRAMP 20x About page",
+          "link": "/20x",
+          "change-info": ""
+        },
+        {
+          "name": "CR26 JSON schemas for machine-readable packages",
+          "link": "/schemas",
+          "change-info": "New route"
+        },
+        {
+          "name": "Marketplace is updated for CR26",
+          "link": "/marketplace",
+          "change-info": "Language adjustments to align with CR26 terminology"
+        },
+        {
+          "name": "Site global navigation bar clean up",
+          "link": "",
+          "change-info": ""
+        }
+      ],
+      "tag": "Website"
+    },
+    {
+      "id": 81,
+      "date": "2026-06-16",
+      "details": "Added Public Notices about the outcome of RFC-0026 through RFC-0030 and CISA Binding Operational Directive 26-04.",
+      "links": [
+        {
+          "name": "NTC-0013 Initial Outcome of Rev5 Baseline RFCs (RFC-0026 through RFC-0030)",
+          "link": "/notices/0013",
+          "change-info": ""
+        },
+        {
+          "name": "NTC-0014 FedRAMP Response to CISA BOD 26-04 (Prioritizing Security Updates Based on Risk)",
+          "link": "/notices/0014",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 80,
+      "date": "2026-06-03",
+      "details": "Added Public Notice NTC-0012 regarding the outcome of RFC-0031 Updated Incident Communications Procedures.",
+      "links": [
+        {
+          "name": "NTC-0012 Initial Outcome on RFC-0031 Updated Incident Communications Procedures.",
+          "link": "/notices/0012",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 79,
+      "date": "2026-05-28",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "Continuing Our Commitment to Public Engagement",
+          "link": "/2026-05-28-continuing-our-commitment-to-public-engagement",
+          "change-info": ""
+        }
+      ],
+      "tag": "Blog"
+    },
+    {
+      "id": 78,
+      "date": "2026-05-27",
+      "details": "Added Public Notice NTC-0011 regarding the outcome of RFC-0025 Retrospective on the Public Comment Process.",
+      "links": [
+        {
+          "name": "NTC-0011 Initial Outcome on the Public Comment Process",
+          "link": "/notices/0011",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 77,
+      "date": "2026-05-18",
+      "details": "Moved the Consolidated Rules for 2026 Public Preview content to its dedicated preview site.",
+      "links": [
+        {
+          "name": "Consolidated Rules for 2026 Public Preview",
+          "link": "https://preview.fedramp.gov/2026",
+          "change-info": "moved preview content to the dedicated preview site"
+        }
+      ],
+      "tag": "Website"
+    },
+    {
+      "id": 76,
+      "date": "2026-05-04",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "Public Preview of the Consolidated Rules for 2026",
+          "link": "/2026-05-04-public-preview-consolidated-rules-2026",
+          "change-info": ""
+        }
+      ],
+      "tag": "Blog"
+    },
+    {
+      "id": 75,
+      "date": "2026-05-04",
+      "details": "Changed all designations from 'FedRAMP Authorization' to 'FedRAMP Certification', and all designations of impact levels to certification classes A, B, C, and D.",
+      "links": [
+        {
+          "name": "FedRAMP Marketplace",
+          "link": "/marketplace",
+          "change-info": ""
+        },
+        {
+          "name": "See here for more information regarding these changes",
+          "link": "/notices/0004",
+          "change-info": ""
+        }
+      ],
+      "tag": "Marketplace"
+    },
+    {
+      "id": 74,
+      "date": "2026-05-01",
+      "details": "The FedRAMP 20x section of this site has been updated to reflect our current progress in 20x Phase and update details of the FedRAMP 20x implementation plan and timeline.",
+      "links": [
+        {
+          "name": "FedRAMP 20x Overview",
+          "link": "/20x/",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Phase Implementation Plan",
+          "link": "/20x/phases",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Phase 3",
+          "link": "/20x/phases/3",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Phase 2 Recap",
+          "link": "/20x/phases/2",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Historical Timeline",
+          "link": "/20x/timeline",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 73,
+      "date": "2026-04-23",
+      "details": "Added NOTICE-0010 regarding FedRAMP Response to CISA V1: ED 25-03.",
+      "links": [
+        {
+          "name": "NOTICE-0010 FedRAMP Response to CISA V1: ED 25-03",
+          "link": "/notices/0010",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 72,
+      "date": "2026-04-21",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "Testing Readiness: Unpacking the Security Inbox Results",
+          "link": "/2026-04-21-testing-readiness-unpacking-the-security-inbox-results",
+          "change-info": ""
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 71,
+      "date": "2026-04-08",
+      "details": "Added RFC-0031 Updated Incident Communications Procedures.",
+      "links": [
+        {
+          "name": "RFC-0031 Updated Incident Communications Procedures",
+          "link": "/rfcs/0031",
+          "change-info": ""
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 70,
+      "date": "2026-03-25",
+      "details": "Added NOTICE-0009 with the initial outcome of RFC-0024 FedRAMP Rev5 Machine-Readable Packages and added information on the FedRAMP Cybersecurity Service!",
+      "links": [
+        {
+          "name": "NOTICE-0009 Initial Outcome of RFC-0024 FedRAMP Rev5 Machine-Readable Packages",
+          "link": "/notices/0009",
+          "change-info": ""
+        },
+        {
+          "name": "Join the FedRAMP Cybersecurity Service!",
+          "link": "/join",
+          "change-info": ""
+        }
+      ],
+      "tag": "Notices"
+    },
+    {
+      "id": 69,
+      "date": "2026-03-19",
+      "details": "Added RFCs 0026-0030 related to Rev5 updates and improvements.",
+      "links": [
+        {
+          "name": "RFC 0026 Clarifying CA-7 Continuous Monitoring Expectations for Rev5 Providers",
+          "link": "/rfcs/0026",
+          "change-info": ""
+        },
+        {
+          "name": "RFC 0027 FedRAMP Rev5 Security Controls Baseline Update for AC, AT, AU, CA, and CM Control Families",
+          "link": "/rfcs/0027",
+          "change-info": ""
+        },
+        {
+          "name": "RFC 0028 FedRAMP Rev5 Security Controls Baseline Update for CP, IA, IR, MA, and MP Control Families",
+          "link": "/rfcs/0028",
+          "change-info": ""
+        },
+        {
+          "name": "RFC 0029 FedRAMP Rev5 Security Controls Baseline Update for PE, PL, PM, PS, and PT Control Families",
+          "link": "/rfcs/0029",
+          "change-info": ""
+        },
+        {
+          "name": "RFC 0030 FedRAMP Rev5 Security Controls Baseline Update for RA, SA, SC, SI, and SR Control Families",
+          "link": "/rfcs/0030",
+          "change-info": ""
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 68,
+      "date": "2026-03-18",
+      "details": "Added RFC-0025",
+      "links": [
+        {
+          "name": "RFC 0025 Retrospective on the Public Comment Process",
+          "link": "/rfcs/0025",
+          "change-info": ""
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 67,
+      "date": "2026-03-11",
+      "details": "Updated FedRAMP Marketplace, including URL and user experience!",
+      "links": [
+        {
+          "name": "New marketplace route fedramp.gov/marketplace",
+          "link": "/marketplace",
+          "change-info": ""
+        },
+        {
+          "name": "See marketplace changes",
+          "link": "/marketplace/changelog",
+          "change-info": ""
+        },
+        {
+          "name": "Guide to updated marketplace",
+          "link": "/marketplace/guide",
+          "change-info": ""
+        }
+      ],
+      "tag": "Changelog"
+    },
+    {
+      "id": 66,
+      "date": "2026-03-06",
+      "details": "Published a public notice with the initial outcome of RFC-0023 Rev5 Program Certifications (No Sponsor Required).",
+      "links": [
+        {
+          "name": "NTC-0008: Initial Outcome from RFC-0023 Rev5 Program Certifications (No Sponsor Required)",
+          "link": "/notices/0008",
+          "change-info": ""
+        }
+      ],
+      "tag": "Public Notice"
+    },
+    {
+      "id": 65,
+      "date": "2026-03-03",
+      "details": "Published a public notice with the initial outcome of RFC-0022 Leveraging External Frameworks.",
+      "links": [
+        {
+          "name": "NTC-0007: Initial Outcome from RFC-0022 Leveraging External Frameworks",
+          "link": "/notices/0007",
+          "change-info": ""
+        }
+      ],
+      "tag": "Public Notice"
+    },
+    {
+      "id": 64,
+      "date": "2026-02-27",
+      "details": "Added an RSS feed for the FedRAMP Changelog for easy subscription to updates including blog posts, RFCs, and relevant site updates.",
+      "links": [
+        {
+          "name": "FedRAMP Changelog RSS Feed",
+          "link": "/changelog/rss.xml",
+          "change-info": ""
+        }
+      ],
+      "tag": "Changelog"
+    },
+    {
+      "id": 63,
+      "date": "2026-02-26",
+      "details": "Published a new blog post.",
+      "links": [
+        {
+          "name": "Delivering Significant Change",
+          "link": "/2026-02-26-delivering-significant-change",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "date": "2026-02-25",
+      "details": "Published public notice for CISA Emergency Directive 26-03.",
+      "links": [
+        {
+          "name": "NTC-0006: Emergency Directive 26-03 Mitigate Vulnerabilities in Cisco-SD WAN Systems",
+          "link": "/notices/0006",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "date": "2026-02-25",
+      "details": "Published public notices with the initial outcomes of RFC-0020 FedRAMP Authorization Designations and RFC-0021 Expanding the FedRAMP Marketplace.",
+      "links": [
+        {
+          "name": "NTC-0004 Initial Outcome from RFC-0020 FedRAMP Authorization Designations",
+          "link": "/notices/0004",
+          "change-info": ""
+        },
+        {
+          "name": "NTC-0005: Initial Outcome from RFC-0021 Expanding the FedRAMP Marketplace",
+          "link": "/notices/0005",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "date": "2026-02-18",
+      "details": "Deployed a new Public Notices page for important notices and announcements that impact the FedRAMP Community; published 3 public notices.",
+      "links": [
+        {
+          "name": "FedRAMP Public Notices",
+          "link": "/notices",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP Public Notices RSS Feed",
+          "link": "/notices/rss.xml",
+          "change-info": ""
+        },
+        {
+          "name": "NTC-0001: Introducing FedRAMP Notices",
+          "link": "/notices/0001",
+          "change-info": ""
+        },
+        {
+          "name": "NTC-0002: Outcome from RFC-0019 Reporting Assessment Costs",
+          "link": "/notices/0002",
+          "change-info": ""
+        },
+        {
+          "name": "NTC-0003: Notification of Planned FY26 Q2 FedRAMP Security Inbox Test",
+          "link": "/notices/0003",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "date": "2026-02-11",
+      "details": "Added RFC discussion video links to RFCs 0019, 0020, 0021, 0022, 0023, and 0024.",
+      "links": [
+        {
+          "name": "RFCs",
+          "link": "/rfcs",
+          "change-info": "video links"
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 58,
+      "date": "2026-01-13",
+      "details": "Published a new blog post, posted 6 new RFCs, published a FedRAMP Events Page and released the list of 20x all selected Phase 2 pilot participants.",
+      "links": [
+        {
+          "name": "Blog: Realizing the FedRAMP Authorization Act",
+          "link": "/2026-01-13-realizing-the-fedramp-authorization-act",
+          "change-info": ""
+        },
+        {
+          "name": "RFC-0019 Reporting Assessment Costs",
+          "link": "/rfcs/0019",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "RFC-0020 FedRAMP Authorization Designations",
+          "link": "/rfcs/0020",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "RFC-0021 Expanding the FedRAMP Marketplace",
+          "link": "/rfcs/0021",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "RFC-0022 Leveraging External Frameworks",
+          "link": "/rfcs/0022",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "RFC-0023 Rev5 Program Certifications (No Sponsor Required)",
+          "link": "/rfcs/0023",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "RFC-0024 FedRAMP Rev5 Machine-Readable Packages",
+          "link": "/rfcs/0024",
+          "change-info": "",
+          "status": "opened"
+        },
+        {
+          "name": "20x Phase 2 Pilot Participants Announced",
+          "link": "/20x/phase-two/participate",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP Events Page",
+          "link": "/events",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "date": "2025-12-17",
+      "details": "Updated the community page, including 2026 community working group meeting information.",
+      "links": [
+        {
+          "name": "FedRAMP Community",
+          "link": "/community",
+          "change-info": "refresh content, meeting links"
+        }
+      ],
+      "tag": "Community"
+    },
+    {
+      "id": 56,
+      "date": "2025-12-17",
+      "details": "Moved Rev5 content to /docs; reorganized /docs to clearly separate 20x and Rev5 content.",
+      "links": [
+        {
+          "name": "Authority & Responsibility",
+          "link": "/docs/authority",
+          "change-info": "New location"
+        },
+        {
+          "name": "Scope of FedRAMP Guidelines and Examples",
+          "link": "/docs/authority/scope",
+          "change-info": "New location"
+        },
+        {
+          "name": "M-24-15",
+          "link": "/docs/authority/m-24-15",
+          "change-info": "New location"
+        },
+        {
+          "name": "Continuous Monitoring Playbook",
+          "link": "/docs/rev5/playbook/csp/continuous-monitoring/intro",
+          "change-info": "New location"
+        },
+        {
+          "name": "CSP Authorization Playbook",
+          "link": "/docs/rev5/playbook/csp/authorization/getting-started",
+          "change-info": "New location"
+        },
+        {
+          "name": "Agency Authorization Playbook",
+          "link": "/docs/rev5/playbook/agency/authorization/intro",
+          "change-info": "New location"
+        }
+      ],
+      "tag": "Docs"
+    },
+    {
+      "id": 55,
+      "date": "2025-12-10",
+      "details": "Published a new blog post.",
+      "links": [
+        {
+          "name": "Announcing the initial 20x Phase 2 pilot participants and FedRAMP's next steps",
+          "link": "/2025-12-10-announcing-the-initial-20x-phase-2-pilot-participants",
+          "change-info": ""
+        }
+      ],
+      "tag": "Blog"
+    },
+    {
+      "id": 54,
+      "date": "2025-12-08",
+      "details": "Updates to certain rev5 templates.",
+      "links": [
+        {
+          "name": "Rev 5 Documents and Templates",
+          "link": "/rev5/documents-templates",
+          "change-info": ""
+        }
+      ],
+      "tag": "Rev5"
+    },
+    {
+      "id": 53,
+      "date": "2025-11-18",
+      "details": "Published a new blog post.",
+      "links": [
+        {
+          "name": "Key FedRAMP Updates After the Shutdown",
+          "link": "/2025-11-18-fedramp-shutdown-updates",
+          "change-info": ""
+        }
+      ],
+      "tag": "Blog"
+    },
+    {
+      "id": 52,
+      "date": "2025-11-18",
+      "details": "Significant updates to 20x content, including more detailed phase two information and the addition of an official documentation page.",
+      "links": [
+        {
+          "name": "FedRAMP 20x",
+          "link": "/20x",
+          "change-info": ""
+        },
+        {
+          "name": "20x Phase Two",
+          "link": "/20x/phase-two",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP docs",
+          "link": "/docs",
+          "change-info": ""
+        }
+      ],
+      "tag": "20x"
+    },
+    {
+      "id": 51,
+      "date": "2025-11-18",
+      "details": "Refreshed the FedRAMP Rev5 documents, including deprecating out of date documents and creating an all new Continuous Monitoring Playbook.",
+      "links": [
+        {
+          "name": "Rev5 Continuous Monitoring Playbook",
+          "link": "/resources/documents/Continuous_Monitoring_Playbook.pdf",
+          "change-info": ""
+        },
+        {
+          "name": "Updated Documents & Templates",
+          "link": "/rev5/documents-templates",
+          "change-info": ""
+        }
+      ],
+      "tag": "Rev5"
+    },
+    {
+      "id": 50,
+      "date": "2025-11-12",
+      "details": "The government shutdown has ended. All open RFCs will close on 11/17/2025.",
+      "links": [
+        {
+          "name": "FedRAMP RFCs",
+          "link": "/rfcs",
+          "change-info": ""
+        }
+      ],
+      "tag": "RFCs"
+    },
+    {
+      "id": 49,
+      "date": "2025-10-29",
+      "details": "Open RFCs have been extended to 2025-11-05 due to the ongoing government shutdown.",
+      "links": [
+        {
+          "name": "FedRAMP RFCs",
+          "link": "/rfcs",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "date": "2025-10-21",
+      "details": "Open RFCs have been extended to 2025-10-29 due to the ongoing government shutdown.",
+      "links": [
+        {
+          "name": "FedRAMP RFCs",
+          "link": "/rfcs",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "date": "2025-10-20",
+      "details": "Updated the FedRAMP Community page to reflect all Community Working Groups being paused during the government shutdown.",
+      "links": [
+        {
+          "name": "FedRAMP Community",
+          "link": "/community",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "date": "2025-10-15",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "Responding to CISA Emergency Directive 26-01",
+          "link": "/2025-10-15-responding-to-cisa-emergency-directive-26-01",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "date": "2025-10-15",
+      "details": "Open RFCs have been extended to 2025-10-21 due to the ongoing government shutdown.",
+      "links": [
+        {
+          "name": "FedRAMP RFCs",
+          "link": "/rfcs",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "date": "2025-10-01",
+      "details": "Added government shutdown information.",
+      "links": [
+        {
+          "name": "FedRAMP During Government Shutdown",
+          "link": "/shutdown",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "date": "2025-09-30",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "FedRAMP Built a Modern Foundation in FY25 to Deliver Massive Improvements in FY26",
+          "link": "/2025-09-30-fedramp-built-a-modern-foundation-in-fy25-to-deliver-massive-improvements-in-fy26",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "date": "2025-09-29",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "Responding to CISA Emergency Directive 25-03",
+          "link": "/2025-09-29-responding-to-cisa-emergency-directive-25-03",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "date": "2025-09-29",
+      "details": "Added new Request for Comment",
+      "links": [
+        {
+          "name": "RFC-0018 FedRAMP Security Inbox Requirements",
+          "link": "/rfcs/0018",
+          "change-info": "",
+          "status": "opened"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "date": "2025-09-24",
+      "details": "FedRAMP 20x Phase Two pilot announcement!",
+      "links": [
+        {
+          "name": "20x Phase Two",
+          "link": "/20x/phase-two",
+          "change-info": "Added FedRAMP 20x Phase Two pilot details"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "date": "2025-09-15",
+      "details": "Added new Requests for Comment",
+      "links": [
+        {
+          "name": "RFC-0016 Collaborative Continuous Monitoring Standard",
+          "link": "/rfcs/0016",
+          "change-info": ""
+        },
+        {
+          "name": "RFC-0017 Persistent Validation and Assessment Standard",
+          "link": "/rfcs/0017",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "date": "2025-09-10",
+      "details": "Added new Requests for Comment",
+      "links": [
+        {
+          "name": "RFC-0015 Recommended Secure Configuration Standard",
+          "link": "/rfcs/0015",
+          "change-info": ""
+        },
+        {
+          "name": "RFC-0014 Phase Two Key Security Indicators",
+          "link": "/rfcs/0014",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "date": "2025-09-10",
+      "details": "Added a Rev5 documents & templates search feature.",
+      "links": [
+        {
+          "name": "Rev 5 Documents and Templates",
+          "link": "/rev5/documents-templates",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "date": "2025-09-02",
+      "details": "Added ChatGPT by OpenAI to the List of Prioritized AI Services",
+      "links": [
+        {
+          "name": "AI Prioritization",
+          "link": "/ai",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "date": "2025-08-28",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "FedRAMP 20x: Five Months In and Full of Surprises",
+          "link": "/2025-08-28-fedramp-20x-five-months-in-and-full-of-surprises",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "date": "2025-08-28",
+      "details": "Updated guidance on the Scope of FedRAMP as required by M-24-15 (following RFC-0010).",
+      "links": [
+        {
+          "name": "Scope of FedRAMP",
+          "link": "/scope",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "date": "2025-08-26",
+      "details": "Added a placeholder page for the 20x Phase Two pilot, coming in October 2025.",
+      "links": [
+        {
+          "name": "20x Phase Two",
+          "link": "/20x/phase-two",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "date": "2025-08-24",
+      "details": "The FedRAMP 20x Authorization Data Standard (ADS), originally RFC-0011 Standard for Storing and Sharing Authorization Data, has been formalized and posted. Minor changes were also made to the FedRAMP Machine Readable Docs.",
+      "links": [
+        {
+          "name": "Authorization Data Standard and other 20x Standards",
+          "link": "/20x/standards",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "date": "2025-08-22",
+      "details": "RFC-0012 has been closed to public comment. All submitted comments can be reviewed on the FedRAMP Community discussion thread.",
+      "links": [
+        {
+          "name": "RFC-0012 FedRAMP Continuous Vulnerability Management Standard Public Comments",
+          "link": "https://github.com/FedRAMP/community/discussions/59",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "date": "2025-08-18",
+      "details": "Added a new page with AI prioritization criteria.",
+      "links": [
+        {
+          "name": "FedRAMP AI Prioritization",
+          "link": "/ai/",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "date": "2025-08-11",
+      "details": "Added new Request for Comment",
+      "links": [
+        {
+          "name": "RFC-0013 SC-7 Boundary Protection Balance Improvement Release",
+          "link": "/rfcs/0013",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "date": "2025-08-08",
+      "details": "Rescinded subnet whitepaper.",
+      "links": []
+    },
+    {
+      "id": 27,
+      "date": "2025-08-07",
+      "details": "Overhauled the FedRAMP website, including a new look and feel, simplified navigation, and archived out-of-date content.",
+      "links": [
+        {
+          "name": "Changelog",
+          "link": "/changelog",
+          "change-info": "new format"
+        },
+        {
+          "name": "Rev5 Resources",
+          "link": "/rev5/agency-authorization",
+          "change-info": "easier navigation, more accessible resources, deprecated old things"
+        },
+        {
+          "name": "20x pages",
+          "link": "/20x/phase-one",
+          "change-info": "new look and feel"
+        },
+        {
+          "name": "About Marketplace",
+          "link": "/about-marketplace",
+          "change-info": "simplified content"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "date": "2025-08-04",
+      "details": "Removed CUI markings from Rev5 templates",
+      "links": []
+    },
+    {
+      "id": 25,
+      "date": "2025-07-30",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "FedRAMP 20x: Four Months In and Authorizing",
+          "link": "/2025-07-30-fedramp-20x-four-months-in-and-authorizing",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "date": "2025-07-22",
+      "details": "Updated 20x Phase One pilot page to include a submission deadline of August 19, 2025",
+      "links": [
+        {
+          "name": "20x Phase One pilot page",
+          "link": "/20x/phase-one",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "date": "2025-07-15",
+      "details": "Added new Request for Comment",
+      "links": [
+        {
+          "name": "RFC-0012 FedRAMP Continuous Vulnerability Management Standard",
+          "link": "/rfcs/0012",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "date": "2025-06-26",
+      "details": "Published a new blog post",
+      "links": [
+        {
+          "name": "FedRAMP 20x: Three Months In and Maximizing Innovation",
+          "link": "/2025-06-26-fedramp-20x-three-months-in-and-maximizing-innovation",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "date": "2025-06-23",
+      "details": "RFC-0011 has been closed to public comment. Public comments can be reviewed on the FedRAMP Community RFC threads.",
+      "links": [
+        {
+          "name": "External: RFC-0011 Public Comments",
+          "link": "https://github.com/FedRAMP/community/discussions/8",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "date": "2025-06-18",
+      "details": "Minor content changes",
+      "links": [
+        {
+          "name": "FedRAMP Rev 5 Agency Authorization",
+          "link": "/rev5/agency-authorization",
+          "change-info": "Moved Rev5 specific content from about-marketplace to the rev5 agency authorization page"
+        },
+        {
+          "name": "FedRAMP 20x Key Security Indicators (KSI)",
+          "link": "/20x/standards",
+          "change-info": "Htofix to correct incorrect KSI mapping"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "date": "2025-06-17",
+      "details": "Published updated guidance and external FedRAMP project information.",
+      "links": [
+        {
+          "name": "FedRAMP 20x Significant Change Notification (SCN) Requirements",
+          "link": "/20x/standards",
+          "change-info": "version 25.06A"
+        },
+        {
+          "name": "FedRAMP 20x Minimum Assessment Scope Standard (MAS)",
+          "link": "/20x/standards",
+          "change-info": "version 25.06A"
+        },
+        {
+          "name": "FedRAMP 20x Key Security Indicators (KSI)",
+          "link": "/20x/standards",
+          "change-info": "version 25.05A"
+        },
+        {
+          "name": "FedRAMP 20x Low Consolidated Guidance",
+          "link": "/20x/standards",
+          "change-info": "version 25.06A"
+        },
+        {
+          "name": "External: FedRAMP 20x Machine Readable (FRMR) Docs",
+          "link": "https://github.com/FedRAMP/docs",
+          "change-info": ""
+        },
+        {
+          "name": "External: FedRAMP Public Roadmap",
+          "link": "https://github.com/FedRAMP/roadmap",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "date": "2025-06-15",
+      "details": "RFC-0009 and RFC-0010 have been closed to public comment. Public comments can be reviewed on the FedRAMP Community RFC threads.",
+      "links": [
+        {
+          "name": "External: RFC-0009 Public Comments",
+          "link": "https://github.com/FedRAMP/community/discussions/6",
+          "change-info": ""
+        },
+        {
+          "name": "External: RFC-0010 Public Comments",
+          "link": "https://github.com/FedRAMP/community/discussions/7",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "date": "2025-06-10",
+      "details": "RFC-0008 has been closed to public comment. Public comments can be reviewed on the FedRAMP Community RFC threads.",
+      "links": [
+        {
+          "name": "External: RFC-0008 Public Comments",
+          "link": "https://github.com/FedRAMP/community/discussions/5",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "date": "2025-05-30",
+      "details": "Published 20x Phase One pilot authorization process",
+      "links": [
+        {
+          "name": "FedRAMP 20x phase one",
+          "link": "/20x/phase-one",
+          "change-info": "Added information to this page"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "date": "2025-05-29",
+      "details": "Published 20x guidance and standards, as well as a new blog post.",
+      "links": [
+        {
+          "name": "FedRAMP 20x Minimum Assessment Scope (MAS)",
+          "link": "/20x/standards",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Key Security Indicators (KSI)",
+          "link": "/20x/standards",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Documentation Identifiers",
+          "link": "/20x/standards",
+          "change-info": ""
+        },
+        {
+          "name": "FedRAMP 20x Standards, consolidated 20x Guidance and 20x Guidance Explorer",
+          "link": "/20x/standards",
+          "change-info": "consolidated resources into a single standards page"
+        },
+        {
+          "name": "FedRAMP 20x: Two Months In and Taking Off",
+          "link": "/2025-05-29-fedramp-20x-two-months-in-and-taking-off",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "date": "2025-05-26",
+      "details": "RFCs 0005, 0006, and 0007 have all been closed to public comment, and an information page about the services that require FedRAMP Authorization has been added.",
+      "links": [
+        {
+          "name": "FedRAMP Scope",
+          "link": "/scope",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "date": "2025-05-23",
+      "details": "Added new Request for Comment",
+      "links": [
+        {
+          "name": "RFC-0011 FedRAMP Pilot Standard for Storing and Sharing Authorization Data",
+          "link": "/rfcs/0011",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "date": "2025-05-15",
+      "details": "Added new Request for Comments",
+      "links": [
+        {
+          "name": "RFC-0010 FedRAMP Scope Interpretation Technical Assistance",
+          "link": "/rfcs/0010",
+          "change-info": ""
+        },
+        {
+          "name": "RFC-0009 Significant Change Notification Technical Assistance",
+          "link": "/rfcs/0009",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "date": "2025-05-14",
+      "details": "Updated the 20x Phase One Pilot pages for clarity",
+      "links": [
+        {
+          "name": "Phase One Pilot page",
+          "link": "/20x/phase-one",
+          "change-info": "revised submission requirements"
+        },
+        {
+          "name": "Pilot Participation Example page",
+          "link": "/20x/phase-one/example",
+          "change-info": "added step 9"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "date": "2025-05-09",
+      "details": "Added new Request for Comment",
+      "links": [
+        {
+          "name": "RFC-0008 Continuous Reporting Standard",
+          "link": "/rfcs/0008",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "date": "2025-05-06",
+      "details": "Updated the 20x Phase One Pilot pages for clarity",
+      "links": [
+        {
+          "name": "Phase One Pilot page",
+          "link": "/20x/phase-one",
+          "change-info": "revised based on Q&A"
+        },
+        {
+          "name": "Pilot Participation Example page",
+          "link": "/20x/phase-one/example",
+          "change-info": "separated out, revised based on Q&A"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "date": "2025-04-24",
+      "details": "Added new Requests for Comment and other new content",
+      "links": [
+        {
+          "name": "FedRAMP 20x: One Month in and Moving Fast",
+          "link": "/2025-04-24-fedramp-20x-one-month-in-and-moving-fast",
+          "change-info": "new blog post"
+        },
+        {
+          "name": "Phase One page",
+          "link": "/20x/phase-one",
+          "change-info": "updated this page with pilot information"
+        },
+        {
+          "name": "RFC-0005 Minimum Assessment Scope Standard",
+          "link": "/rfcs/0005",
+          "change-info": ""
+        },
+        {
+          "name": "RFC-0006 20x Phase One Key Security Indicators",
+          "link": "/rfcs/0006",
+          "change-info": ""
+        },
+        {
+          "name": "RFC-0007 Significant Change Notification Standard",
+          "link": "/rfcs/0007",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "2025-04-11",
+      "details": "Updated about marketplace page to reflect marketplace policy changes",
+      "links": [
+        {
+          "name": "About FedRAMP Marketplace",
+          "link": "/about-marketplace",
+          "change-info": "Offerings remain authorized in the marketplace even without a current active agency ATO"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "2025-04-07",
+      "details": "Added top level outcomes for all recently closed RFCs",
+      "links": [
+        {
+          "name": "Requests for Comment",
+          "link": "/rfcs",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "2025-04-02",
+      "details": "Closed all open RFCs",
+      "links": [
+        {
+          "name": "Requests for Comment",
+          "link": "/rfcs",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "2025-03-21",
+      "details": "GSA announces a new direction for FedRAMP, with significant website changes and press engagement",
+      "links": [
+        {
+          "name": "Press Engagement",
+          "link": "/",
+          "change-info": ""
+        },
+        {
+          "name": "Community Working Groups",
+          "link": "/community",
+          "change-info": "GSA announces community working groups to engage and collaborate with the FedRAMP community and industry"
+        },
+        {
+          "name": "Phase One Goals",
+          "link": "/20x/phase-one",
+          "change-info": "GSA announces Phase One goals for the new direction of FedRAMP, called 20x"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "2025-01-28",
+      "details": "The Emerging Technology Prioritization Framework page has been removed per Executive Order 'INITIAL RESCISSIONS OF HARMFUL EXECUTIVE ORDERS AND ACTIONS'",
+      "links": [
+        {
+          "name": "Executive Order: INITIAL RESCISSIONS OF HARMFUL EXECUTIVE ORDERS AND ACTIONS",
+          "link": "https://www.whitehouse.gov/presidential-actions/2025/01/initial-rescissions-of-harmful-executive-orders-and-actions/",
+          "change-info": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2025-01-20",
+      "details": "President Donald J. Trump takes office and appoints new leadership for the General Services Administration.",
+      "links": []
+    },
+    {
+      "id": 1,
+      "date": "2025-01-12",
+      "details": "Added an events page to list upcoming FedRAMP events",
+      "links": [
+        {
+          "name": "FedRAMP Events",
+          "link": "/events",
+          "change-info": "new events page"
+        }
+      ],
+      "tag": "Events"
+    }
+  ],
+  "lastUpdated": "2026-08-06T16:54:43.761Z"
+}

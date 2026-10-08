@@ -1,0 +1,32 @@
+/* src/styles/partials/config/_components.scss */
+// Define all component-related USWDS theme variables
+// Available variables: https://designsystem.digital.gov/documentation/settings/
+
+// Banner settings
+$theme-banner-link-color: 'primary-vivid';
+
+// Button settings
+$theme-button-border-radius: 'lg';
+// $theme-button-small-width: 6;
+// $theme-button-stroke-width: 1px;
+// Card settings
+$theme-card-border-color: 'base';
+// $theme-card-border-radius: '0.5';
+// $theme-card-border-width: 1px;
+// $theme-card-gap: 2;
+// $theme-card-flag-min-width: 'mobile';
+// $theme-card-padding-perimeter: 2;
+// $theme-card-padding-y: 2;
+// $theme-card-padding-x: 2;
+// Form controls
+// $theme-input-line-height: 3;
+// $theme-input-max-width: 'mobile-lg';
+// $theme-input-select-height: 6;
+// $theme-input-state-border-width: 0.5;
+// $theme-input-tile-border-radius: '0.5';
+// $theme-input-tile-border-width: 1px;
+
+// Table settings
+// Overriding default color theming for so our theme color has AA contrast for both preferred and fallback color tokens
+// default value is "default" which will match $theme-body-background-color (which is dark purple, no bueno)
+$theme-table-background-color: 'gray-5';

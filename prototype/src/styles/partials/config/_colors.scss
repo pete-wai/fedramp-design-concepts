@@ -1,0 +1,77 @@
+/* styles/partials/config/_colors.scss */
+// FedRAMP color system
+// Define all color-related USWDS theme variables
+// Available variables: https://designsystem.digital.gov/documentation/settings/
+
+$theme-color-primary-family: 'violet';
+$theme-color-primary-lightest: #e7def1;
+$theme-color-primary-lighter: #c6b0db;
+$theme-color-primary-light: #9877b7;
+$theme-color-primary: #6e164e;
+$theme-color-primary-vivid: #7a1857;
+$theme-color-primary-dark: #491c3d;
+$theme-color-primary-darker: #2d1a39;
+$theme-color-primary-darkest: #1b1121;
+
+// Secondary colors
+$theme-color-secondary-family: 'orange';
+$theme-color-secondary-lightest: #fce9e3;
+$theme-color-secondary-lighter: #f9c8ba;
+$theme-color-secondary-light: #ef8f6d;
+$theme-color-secondary: #ce4929;
+$theme-color-secondary-vivid: #ea4c20;
+$theme-color-secondary-dark: #b33817;
+$theme-color-secondary-darker: #8a2b12;
+$theme-color-secondary-darkest: #5e1d0c;
+
+// Accent warm colors (gold/yellow)
+$theme-color-accent-warm-family: 'gold';
+$theme-color-accent-warm-lightest: #fef4e2;
+$theme-color-accent-warm-lighter: #f7e2b9;
+$theme-color-accent-warm-light: #f5b755;
+$theme-color-accent-warm: #f7c980;
+$theme-color-accent-warm-dark: #d6a23d;
+$theme-color-accent-warm-darker: #a67f28;
+$theme-color-accent-warm-darkest: #775c1e;
+
+// Accent cool colors (purple accents)
+$theme-color-accent-cool-family: 'violet';
+$theme-color-accent-cool-lightest: #e9e1f0;
+$theme-color-accent-cool-lighter: #cabddd;
+$theme-color-accent-cool-light: #9981b9;
+$theme-color-accent-cool: #684b7d;
+$theme-color-accent-cool-dark: #4f3860;
+$theme-color-accent-cool-darker: #3c2a48;
+$theme-color-accent-cool-darkest: #291d31;
+
+// Base colors (grayscale with purple tint)
+$theme-color-base-family: 'violet';
+$theme-color-base-lightest: #f5f5fa;
+$theme-color-base-lighter: #d9d2e1;
+$theme-color-base-light: #b6aabe;
+$theme-color-base: #8968a4;
+$theme-color-base-dark: #543669;
+$theme-color-base-darker: #3d2649;
+$theme-color-base-darkest: #1b1121;
+$theme-color-base-ink: #1b1121;
+
+// State colors for notifications and status indicators
+$theme-color-error: #d83933;
+$theme-color-error-dark: #b31b1b;
+$theme-color-warning: #ffbe2e;
+$theme-color-warning-dark: #e5a000;
+$theme-color-success: #2e8540;
+$theme-color-success-dark: #174e24;
+$theme-color-info: #378ea5;
+$theme-color-info-dark: #205464;
+
+// URL link colors
+$theme-link-color: 'blue-60v';
+$theme-link-hover-color: 'red-60v';
+$theme-link-active-color: 'red-60v';
+$theme-link-visited-color: 'blue-60v';
+
+// Dark theme overrides
+$theme-body-background-color: 'primary-darker';
+$theme-text-color: 'white';
+$theme-text-reverse-color: 'ink';

@@ -1,0 +1,18 @@
+/* styles/global.scss */
+// Main entrypoint to site stylesheets
+// Import FedRAMP theme which is using configured U.S. Web Design System
+@use '@styles/uswds.scss' as *;
+// Import additional stylesheets below that can may override USWDS rules
+
+// Import configured full USWDS stylesheet
+@use '@uswds/uswds/src/stylesheets/uswds' as *;
+
+// Import your custom stylesheets that uses the configured USWDS.
+// These files now have access to USWDS functions (color(), units()) and variables without a namespace.
+@use 'partials/_fedramp-theme';
+@use 'partials/_adjustments';
+@use 'partials/_uswds-custom';
+
+// Lab shell accessibility: preserve route body appearance.
+.site-header :focus-visible, footer :focus-visible { outline: 3px solid #f7c980 !important; outline-offset: 3px !important; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }

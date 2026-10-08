@@ -1,0 +1,27 @@
+/* src/styles/partials/config/_layout.scss */
+// Define all layout-related USWDS theme variables (spacing settings)
+// Available variables: https://designsystem.digital.gov/documentation/settings/
+
+// Grid settings
+$theme-grid-container-max-width: 'widescreen';
+
+// Site margins
+$theme-site-margins-breakpoint: 'widescreen';
+$theme-site-margins-width: 4;
+$theme-site-margins-mobile-width: 2;
+
+// Navigation
+$theme-header-max-width: 'desktop-lg';
+$theme-header-min-width: 'desktop';
+// $theme-navbar-width: 'desktop';
+$theme-sidenav-current-border-width: 0.5;
+// $theme-sidenav-width: 10;
+// Spacing settings
+// $theme-column-gap-sm: 2;
+// $theme-column-gap-md: 4;
+// $theme-column-gap-lg: 5;
+// $theme-row-gap-sm: 2;
+// $theme-row-gap-md: 3;
+// $theme-row-gap-lg: 5;
+// $theme-spacing-unit: 0.5;
+// $theme-focus-shadow-color: '#E35933';

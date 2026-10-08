@@ -1,0 +1,1 @@
+<script lang="ts">import Arrow from './I7Arrow.svelte';let {label,href,resource}=$props();</script><details class="preview"><summary>{label}<Arrow/></summary><div class="preview-panel"><p>This destination is outside this landing-page prototype.</p><a {href}>{resource}<span class="sr-only"> — official FedRAMP website</span></a></div></details>

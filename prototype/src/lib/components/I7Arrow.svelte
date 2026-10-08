@@ -1,0 +1,1 @@
+<script lang="ts">let {direction='right'}=$props();</script><svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" style:transform={direction==='down'?'rotate(90deg)':undefined}><path d="M4 12h15M13 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>

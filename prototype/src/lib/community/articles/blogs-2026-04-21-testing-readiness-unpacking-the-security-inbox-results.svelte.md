@@ -1,0 +1,1 @@
+<p>A program perspective from the FedRAMP blog. Read the original post for the complete announcement and its historical context.</p>

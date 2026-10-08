@@ -1,0 +1,5 @@
+/* Scope corrections to the new hub surfaces; protected inherited tables are untouched. */
+.community input::placeholder{color:var(--muted);opacity:1}
+.community .ledger-table table,.community .ledger-table td{background:var(--paper);color:var(--ink);border-color:var(--line)}
+.community .ledger-table th{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.community .ledger-table td:last-child{color:var(--muted)}

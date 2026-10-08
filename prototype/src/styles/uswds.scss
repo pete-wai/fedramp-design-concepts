@@ -1,0 +1,143 @@
+/* src/styles/uswds.scss */
+// This file gathers all theme variable and passes them to USWDS core.
+// Available variables: https://designsystem.digital.gov/documentation/settings/
+
+// 1. Import individual theme configuration partials
+@use 'partials/config/_colors' as colors;
+@use 'partials/config/_components' as components;
+@use 'partials/config/_general' as general;
+@use 'partials/config/_layout' as layout;
+@use 'partials/config/_typography' as typography;
+
+// 2. Configure USWDS core with config variables
+@forward '@uswds/uswds/packages/uswds-core' with (
+  // --- Paths (from general) ---
+  $theme-image-path: general.$theme-image-path,
+  $theme-font-path: general.$theme-font-path,
+
+  // --- Basic Settings (from general) ---
+  $theme-show-notifications: general.$theme-show-notifications,
+  $theme-grid-container-max-width: layout.$theme-grid-container-max-width,
+  // From layout
+  $theme-focus-color: general.$theme-focus-color,
+  $theme-focus-width: general.$theme-focus-width,
+  // theme-focus-offset: general.$theme-focus-offset, // Uncomment if needed
+  $theme-icon-image-size: general.$theme-icon-image-size,
+
+  // --- Utility breakpoints (from general) ---
+  $theme-utility-breakpoints: general.$theme-utility-breakpoints,
+
+  // --- Color system (from colors) ---
+  $theme-color-primary-family: colors.$theme-color-primary-family,
+  $theme-color-primary-lightest: colors.$theme-color-primary-lightest,
+  $theme-color-primary-lighter: colors.$theme-color-primary-lighter,
+  $theme-color-primary-light: colors.$theme-color-primary-light,
+  $theme-color-primary: colors.$theme-color-primary,
+  $theme-color-primary-vivid: colors.$theme-color-primary-vivid,
+  $theme-color-primary-dark: colors.$theme-color-primary-dark,
+  $theme-color-primary-darker: colors.$theme-color-primary-darker,
+  $theme-color-primary-darkest: colors.$theme-color-primary-darkest,
+
+  $theme-color-secondary-family: colors.$theme-color-secondary-family,
+  $theme-color-secondary-lightest: colors.$theme-color-secondary-lightest,
+  $theme-color-secondary-lighter: colors.$theme-color-secondary-lighter,
+  $theme-color-secondary-light: colors.$theme-color-secondary-light,
+  $theme-color-secondary: colors.$theme-color-secondary,
+  $theme-color-secondary-vivid: colors.$theme-color-secondary-vivid,
+  $theme-color-secondary-dark: colors.$theme-color-secondary-dark,
+  $theme-color-secondary-darker: colors.$theme-color-secondary-darker,
+  $theme-color-secondary-darkest: colors.$theme-color-secondary-darkest,
+
+  $theme-color-accent-warm-family: colors.$theme-color-accent-warm-family,
+  $theme-color-accent-warm-lightest: colors.$theme-color-accent-warm-lightest,
+  $theme-color-accent-warm-lighter: colors.$theme-color-accent-warm-lighter,
+  $theme-color-accent-warm-light: colors.$theme-color-accent-warm-light,
+  $theme-color-accent-warm: colors.$theme-color-accent-warm,
+  $theme-color-accent-warm-dark: colors.$theme-color-accent-warm-dark,
+  $theme-color-accent-warm-darker: colors.$theme-color-accent-warm-darker,
+  $theme-color-accent-warm-darkest: colors.$theme-color-accent-warm-darkest,
+
+  $theme-color-accent-cool-family: colors.$theme-color-accent-cool-family,
+  $theme-color-accent-cool-lightest: colors.$theme-color-accent-cool-lightest,
+  $theme-color-accent-cool-lighter: colors.$theme-color-accent-cool-lighter,
+  $theme-color-accent-cool-light: colors.$theme-color-accent-cool-light,
+  $theme-color-accent-cool: colors.$theme-color-accent-cool,
+  $theme-color-accent-cool-dark: colors.$theme-color-accent-cool-dark,
+  $theme-color-accent-cool-darker: colors.$theme-color-accent-cool-darker,
+  $theme-color-accent-cool-darkest: colors.$theme-color-accent-cool-darkest,
+
+  $theme-color-base-family: colors.$theme-color-base-family,
+  $theme-color-base-lightest: colors.$theme-color-base-lightest,
+  $theme-color-base-lighter: colors.$theme-color-base-lighter,
+  $theme-color-base-light: colors.$theme-color-base-light,
+  $theme-color-base: colors.$theme-color-base,
+  $theme-color-base-dark: colors.$theme-color-base-dark,
+  $theme-color-base-darker: colors.$theme-color-base-darker,
+  $theme-color-base-darkest: colors.$theme-color-base-darkest,
+  $theme-color-base-ink: colors.$theme-color-base-ink,
+
+  $theme-color-error: colors.$theme-color-error,
+  $theme-color-error-dark: colors.$theme-color-error-dark,
+  $theme-color-warning: colors.$theme-color-warning,
+  $theme-color-warning-dark: colors.$theme-color-warning-dark,
+  $theme-color-success: colors.$theme-color-success,
+  $theme-color-success-dark: colors.$theme-color-success-dark,
+  $theme-color-info: colors.$theme-color-info,
+  $theme-color-info-dark: colors.$theme-color-info-dark,
+
+  $theme-link-color: colors.$theme-link-color,
+  $theme-link-hover-color: colors.$theme-link-hover-color,
+  $theme-link-active-color: colors.$theme-link-active-color,
+  $theme-link-visited-color: colors.$theme-link-visited-color,
+
+  // --- Theme Components (from components) ---
+  $theme-banner-link-color: components.$theme-banner-link-color,
+  $theme-card-border-color: components.$theme-card-border-color,
+  $theme-button-border-radius: components.$theme-button-border-radius,
+  $theme-table-background-color: components.$theme-table-background-color,
+
+  // --- Theme Layout (from layout) ---
+  $theme-site-margins-breakpoint: layout.$theme-site-margins-breakpoint,
+  $theme-site-margins-width: layout.$theme-site-margins-width,
+  $theme-site-margins-mobile-width: layout.$theme-site-margins-mobile-width,
+  $theme-header-max-width: layout.$theme-header-max-width,
+  $theme-header-min-width: layout.$theme-header-min-width,
+  // theme-navbar-width: layout.$theme-navbar-width,
+  $theme-sidenav-current-border-width: layout.$theme-sidenav-current-border-width,
+  // theme-sidenav-width: layout.$theme-sidenav-width,
+  // --- Dark theme overrides (from colors) ---
+  $theme-body-background-color: colors.$theme-body-background-color,
+  $theme-text-color: colors.$theme-text-color,
+  $theme-text-reverse-color: colors.$theme-text-reverse-color,
+
+  // --- Typography settings (from typography - uncomment if needed) ---
+  // theme-font-type-sans: typography.$theme-font-type-sans,
+  // theme-font-type-serif: typography.$theme-font-type-serif,
+  // theme-font-type-mono: typography.$theme-font-type-mono,
+  // theme-font-role-heading: typography.$theme-font-role-heading,
+  // theme-font-role-body: typography.$theme-font-role-body,
+  // theme-font-role-code: typography.$theme-font-role-code,
+  // theme-font-role-alt: typography.$theme-font-role-alt,
+  // theme-body-font-size: typography.$theme-body-font-size,
+  // theme-body-line-height: typography.$theme-body-line-height,
+  // theme-style-body-element: typography.$theme-style-body-element,
+  // theme-font-weight-thin: typography.$theme-font-weight-thin,
+  // theme-font-weight-light: typography.$theme-font-weight-light,
+  // theme-font-weight-normal: typography.$theme-font-weight-normal,
+  // theme-font-weight-medium: typography.$theme-font-weight-medium,
+  // theme-font-weight-semibold: typography.$theme-font-weight-semibold,
+  // theme-font-weight-bold: typography.$theme-font-weight-bold,
+  // theme-font-weight-heavy: typography.$theme-font-weight-heavy,
+  // theme-h1-font-size: typography.$theme-h1-font-size,
+  // theme-h2-font-size: typography.$theme-h2-font-size,
+  // theme-h3-font-size: typography.$theme-h3-font-size,
+  // theme-h4-font-size: typography.$theme-h4-font-size,
+  // theme-h5-font-size: typography.$theme-h5-font-size,
+  // theme-h6-font-size: typography.$theme-h6-font-size,
+  // theme-heading-line-height: typography.$theme-heading-line-height,
+  // theme-small-font-size: typography.$theme-small-font-size,
+   // theme-title-font-size: typography.$theme-title-font-size,
+);
+
+// 3. Forward USWDS functions for use within component stylesheets (these will properly use configured design tokens)
+@forward '@uswds/uswds/packages/uswds-core' show color, fonts, units;

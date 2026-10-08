@@ -1,0 +1,1 @@
+import{n as l,w as s}from"./DAzO8ldX.js";function u(r,f,e,i,d){var n;l&&s();var t=(n=f.$$slots)==null?void 0:n[e],a=!1;t===!0&&(t=f[e==="default"?"children":e],a=!0),t===void 0||t(r,a?()=>i:i)}export{u as s};

@@ -1,0 +1,127 @@
+<!-- app.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/fedramp-design-concepts/i13-open-house/favicons/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 300;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i13-open-house/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 400;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i13-open-house/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Source Sans Pro Web';
+        font-style: normal;
+        font-weight: 700;
+        font-display: optional;
+        src: url('/fedramp-design-concepts/i13-open-house/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2') format('woff2');
+      }
+    </style>
+
+    <script>/* Copy into each variant's app.html head, replacing i13-open-house. Runs before paint. */
+(function () {
+  var key = 'fedramp-design-concepts:i8:i13-open-house:theme';
+  var valid = function (value) { return ['light', 'dark', 'system'].includes(value); };
+  var preference = 'system';
+  try { var stored = localStorage.getItem(key); if (valid(stored)) preference = stored; } catch (_) {}
+  var url = new URL(location.href);
+  var requested = url.searchParams.get('theme');
+  if (valid(requested)) { preference = requested; try { localStorage.setItem(key, preference); } catch (_) {} }
+  var media = matchMedia('(prefers-color-scheme: dark)');
+  function apply() {
+    document.documentElement.dataset.theme = preference === 'system' ? (media.matches ? 'dark' : 'light') : preference;
+    document.documentElement.dataset.themePreference = preference;
+  }
+  window.fedrampTheme = {
+    get: function () { return preference; },
+    set: function (value) {
+      if (!valid(value)) return;
+      preference = value;
+      try { localStorage.setItem(key, value); } catch (_) {}
+      var current = new URL(location.href);
+      if (current.searchParams.has('theme')) { current.searchParams.delete('theme'); history.replaceState(history.state, '', current); }
+      apply();
+    }
+  };
+  media.addEventListener('change', function () { if (preference === 'system') apply(); });
+  apply();
+})();
+</script>
+<style>@font-face{font-family:'Public I7';font-weight:400;src:url('/fedramp-design-concepts/i13-open-house/uswds/fonts/public-sans/PublicSans-Regular.woff2')}@font-face{font-family:'Public I7';font-weight:700 800;src:url('/fedramp-design-concepts/i13-open-house/uswds/fonts/public-sans/PublicSans-Bold.woff2')}@font-face{font-family:'Public I7';font-weight:900;src:url('/fedramp-design-concepts/i13-open-house/uswds/fonts/public-sans/PublicSans-Black.woff2')}@font-face{font-family:'Merri I7';font-weight:400;src:url('/fedramp-design-concepts/i13-open-house/uswds/fonts/merriweather/Latin-Merriweather-Regular.woff2')}@font-face{font-family:'Merri I7';font-weight:700 900;src:url('/fedramp-design-concepts/i13-open-house/uswds/fonts/merriweather/Latin-Merriweather-Bold.woff2')}@font-face{font-family:'Merri I7';font-weight:400 900;font-style:italic;src:url('/fedramp-design-concepts/i13-open-house/uswds/fonts/merriweather/Latin-Merriweather-BoldItalic.woff2')}</style>
+<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/entry/start.CuciK50U.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/CdLOgBc4.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/wDdZEqoT.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/DAzO8ldX.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BxmfXkna.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/-UyI9lYi.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/C-FmCb1d.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/entry/app.CPC0tbxO.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/Dp1pzeXC.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/Bzak7iHL.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BvkcdQQG.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BgJFpYgF.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/Cz8wX5uC.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/CENgcTi-.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/v-NSEZfx.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/nodes/0.BZEPw4Zu.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/N3COEQBw.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/CMusgd8p.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/DcLWJba8.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/LTpqca4N.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/jxfqc0c9.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BL4Rbfxs.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BckpeI3k.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/Cwn06lPd.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/CvhPecGV.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/DDzN32z2.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BuDq-QxP.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/nodes/18.DR0AEg5h.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/BaYjOJfo.js" rel="modulepreload">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/chunks/CROhUMfd.js" rel="modulepreload">
+		<!--12qhfyh--><meta name="description" content="The Federal Risk and Authorization Management Program, or FedRAMP, is a government-wide program that provides a standardized approach to security assessment."/> <!--[-1--><!--]--> <meta property="og:type" content="website"/> <meta property="og:title" content="Fedramp Design Concepts I13 Open House Engineering"/> <meta property="og:description" content="The Federal Risk and Authorization Management Program, or FedRAMP, is a government-wide program that provides a standardized approach to security assessment."/> <meta property="og:url" content="http://sveltekit-prerender/fedramp-design-concepts/i13-open-house/engineering/"/> <meta name="twitter:title" content="Fedramp Design Concepts I13 Open House Engineering"/> <meta name="twitter:description" content="The Federal Risk and Authorization Management Program, or FedRAMP, is a government-wide program that provides a standardized approach to security assessment."/> <meta name="twitter:card" content="summary_large_image"/> <meta property="og:image" content="https://www.fedramp.gov/fedramp-design-concepts/i13-open-house/thumbnail-image.png"/> <meta name="twitter:image" content="https://www.fedramp.gov/fedramp-design-concepts/i13-open-house/thumbnail-image.png"/> <meta property="og:logo" content="https://www.fedramp.gov/fedramp-logo-inverse.svg"/><!----><!--4iz8pm--><meta name="description" content="Explore a clearly labeled Engineering Resources planning prototype. Illustrative content, not official guidance."/><!----><title>Engineering Resources — planning prototype · FedRAMP</title>
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/assets/0.BHepWgKn.css" rel="stylesheet">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/assets/PlanningPage.Cw8yWBMo.css" rel="stylesheet">
+		<link href="/fedramp-design-concepts/i13-open-house/_app/immutable/assets/i12-base.BpKFr0Qt.css" rel="stylesheet">
+  <style>.i11.i10 .agency-decision{padding-bottom:50px}.i11.i10 .assurance{padding-top:50px}</style></head>
+
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[0--><!--[--><!--[1--><!--[-1--><!--[--><div class="hub12 planning" id="top"><a class="skip" href="#main">Skip to main content</a> <header class="plan-masthead"><a href="/fedramp-design-concepts/i13-open-house/" aria-label="FedRAMP homepage"><img class="logo-light" src="/fedramp-design-concepts/i13-open-house/fedramp-logo.svg" alt="FedRAMP" width="132" height="44"/><img class="logo-dark" src="/fedramp-design-concepts/i13-open-house/fedramp-logo-inverse.svg" alt="FedRAMP" width="132" height="44"/></a> <label hidden=""><span class="sr-only">Appearance</span><select aria-label="Appearance"><option value="system" selected="">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label></header> <nav class="plan-nav" aria-label="Planning navigation"><a href="/fedramp-design-concepts/i13-open-house/community/">Community</a><a href="/fedramp-design-concepts/i13-open-house/engineering/" aria-current="page">Engineering</a><a href="/fedramp-design-concepts/i13-open-house/agency-use/">Agency Use</a><a href="#top">Top ↑</a></nav> <main id="main" tabindex="-1"><header class="plan-opening"><h1>Engineering Resources<strong>From practice to evidence.</strong></h1> <p class="plan-intro">Explore a possible home for practical walkthroughs, examples and engineering references.</p> <p class="prototype-note"><strong>Placeholder · interactive planning prototype.</strong> These outlines and examples are proposed content, not FedRAMP requirements or official guidance. No tools, submissions or decisions are connected.</p></header> <section class="plan-workspace" aria-labelledby="try-heading"><div class="plan-rail"><h2 id="try-heading">What are you working on?</h2><p>Choose a task to preview the kind of resource this section could provide.</p> <div class="plan-choices" role="group" aria-label="Preview a planning approach" hidden=""><!--[--><button aria-pressed="true"><!--[-1--><!--]-->Connect the work you already do</button><button aria-pressed="false"><!--[-1--><!--]-->Explain the evidence</button><button aria-pressed="false"><!--[-1--><!--]-->Keep the picture current</button><!--]--></div> <noscript><p>All proposed approaches are available in the outline below.</p></noscript></div> <div class="plan-preview" aria-live="polite" aria-atomic="true"><p class="preview-label">Illustrative content preview</p><h3>Where could existing engineering work become useful evidence?</h3><p>A proposed starting point for mapping identity, deployment and vulnerability workflows to the questions an assurance team needs to answer.</p><blockquote>Example placeholder: a deployment record paired with a readable explanation of what changed.</blockquote><p class="proposed-resource">Proposed resource: an annotated evidence walkthrough.</p> <a href="#outline">See the complete proposed outline ↓</a></div></section> <section class="plan-outline" id="outline" aria-labelledby="outline-heading"><div><h2 id="outline-heading">A small, useful resource library.</h2><p>The first proposed collection would favor worked examples over long introductions.</p></div> <div class="outline-list"><!--[--><details><summary>Connect the work you already do<span aria-hidden="true">+</span></summary><p>A proposed starting point for mapping identity, deployment and vulnerability workflows to the questions an assurance team needs to answer.</p><p><strong>Proposed resource: an annotated evidence walkthrough.</strong></p><p class="placeholder-line">Placeholder only. This resource has not been authored.</p></details><details><summary>Explain the evidence<span aria-hidden="true">+</span></summary><p>A proposed guide to context, ownership, timestamps and limitations. The goal is to make an example easy to inspect and discuss.</p><p><strong>Proposed resource: an example gallery with annotations.</strong></p><p class="placeholder-line">Placeholder only. This resource has not been authored.</p></details><details><summary>Keep the picture current<span aria-hidden="true">+</span></summary><p>A proposed view that connects an operational change to the evidence and explanation it affects.</p><p><strong>Proposed resource: a change walkthrough.</strong></p><p class="placeholder-line">Placeholder only. This resource has not been authored.</p></details><!--]--></div></section> <section class="plan-discussion" aria-labelledby="discussion-heading"><div><h2 id="discussion-heading">What should we build next?</h2><p>Mark the ideas you would want to discuss. This is a local interaction demo; nothing is saved or sent.</p></div> <div><fieldset><legend>Ideas to discuss</legend><!--[--><label><input type="checkbox" value="connect"/>an annotated evidence walkthrough</label><label><input type="checkbox" value="explain"/>an example gallery with annotations</label><label><input type="checkbox" value="maintain"/>a change walkthrough</label><!--]--></fieldset><p class="selection-status" role="status">0 of 3 ideas marked for discussion</p><button class="reset-ideas" disabled="">Clear choices</button></div></section> <section class="official-exit" aria-labelledby="official-heading"><h2 id="official-heading">Looking for official guidance?</h2><p>Use the published FedRAMP sources for requirements and program guidance.</p><nav aria-label="Official resources"><!--[0--><a href="https://www.fedramp.gov/2026/providers/20x/key-security-indicators/">Key Security Indicators ↗</a><a href="https://www.fedramp.gov/2026/">Consolidated rules and guidance ↗</a><!--]--></nav></section></main> <footer class="plan-footer"><p>Iteration 13 · Open House<br/>Basic prototyping for interactive planning.</p><a href="/fedramp-design-concepts/i13-open-house/">Homepage</a><a href="/fedramp-design-concepts/i13-open-house/community/">Community Hub</a><a href="#top">Back to top ↑</a></footer></div><!--]--><!--]--><!----><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_8o0ska = {
+						base: "/fedramp-design-concepts/i13-open-house",
+						assets: "/fedramp-design-concepts/i13-open-house"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/fedramp-design-concepts/i13-open-house/_app/immutable/entry/start.CuciK50U.js"),
+						import("/fedramp-design-concepts/i13-open-house/_app/immutable/entry/app.CPC0tbxO.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 18],
+							data: [{type:"data",data:{menuItems:[{id:"community-updates",text:"Community & Updates",children:[{id:"changelog",text:"Changelog",href:"/changelog/"},{id:"blog",text:"Blog",href:"/blog/1/"},{id:"events",text:"Events",href:"/events/"},{id:"cwg",text:"Community Updates",href:"/community/"},{id:"notices",text:"Public Notices",href:"/notices/"},{id:"rfcs",text:"Requests For Comment",href:"/rfcs/"}]},{id:"rules",text:"Rules & Requirements",children:[{id:"2026",text:"Consolidated Rules for 2026",href:"/2026/",reload:true},{id:"legacy",text:"Legacy Documentation Reference",href:"/legacy/",reload:true}]},{id:"20x",text:"FedRAMP 20x",href:"/20x"},{id:"marketplace",text:"Marketplace",href:"/marketplace"}],projectInfo:{href:"/fedramp-design-concepts/i13-open-house/",logo:{src:"/fedramp-design-concepts/i13-open-house/fedramp-logo-vert.svg",alt:"FedRAMP"}},search:{enabled:true,action:"https://search.usa.gov/search",placeholder:"Search",buttonText:"Search"},heroBannerValues:{blog:{heroBannerHeading:"Focus on FedRAMP® Blog",heroBannerText:"Discover what’s happening in the FedRAMP world.",heroBannerClass:"fedramp-basic-hero-banner"},updates:{changelog:{heroBannerHeading:"FedRAMP Updates Changelog",heroBannerClass:"fedramp-basic-hero-banner"},events:{heroBannerHeading:"FedRAMP Events",heroBannerClass:"fedramp-basic-hero-banner"},community:{heroBannerHeading:"FedRAMP Community Updates",heroBannerClass:"fedramp-basic-hero-banner"},disclaimers:{heroBannerHeading:"FedRAMP Disclaimers",heroBannerClass:"fedramp-basic-hero-banner"},docs:{heroBannerHeading:"FedRAMP Docs",heroBannerClass:"fedramp-basic-hero-banner"},governance:{heroBannerHeading:"FedRAMP Governance",heroBannerText:"The Federal Risk and Authorization Management Program operates in a complex matrix of shared or distributed responsibilities across the federal government. Learn more about who is involved, their responsibilities, and how they interact with FedRAMP.",heroBannerClass:"fedramp-basic-hero-banner"},rfcs:{heroBannerHeading:"Requests for Comment",heroBannerClass:"fedramp-basic-hero-banner"},scope:{heroBannerHeading:"Scope of FedRAMP",heroBannerClass:"fedramp-basic-hero-banner"},shutdown:{heroBannerHeading:"FedRAMP During Government Shutdown",heroBannerClass:"fedramp-basic-hero-banner"}},rev5:{documents:{heroBannerHeading:"FedRAMP Documents & Templates",heroBannerClass:"fedramp-basic-hero-banner"},stakeholders:{heroBannerHeading:"FedRAMP Stakeholders",heroBannerClass:"fedramp-basic-hero-banner"}},schemas:{list:{heroBannerHeading:"FedRAMP JSON Schemas",heroBannerClass:"fedramp-basic-hero-banner"},validator:{heroBannerHeading:"JSON Schema Validator",heroBannerClass:"fedramp-basic-hero-banner"}},brand:{heroBannerHeading:"FedRAMP Brand Guide",heroBannerClass:"fedramp-basic-hero-banner"}}},uses:{url:1},slash:"always"},null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

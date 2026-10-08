@@ -1,0 +1,1 @@
+import {error} from '@sveltejs/kit';import snapshot from '$lib/community/data.json';export function entries(){return snapshot.issues.map(i=>({edition:i.date}));}export function load({params}){if(!snapshot.issues.some(i=>i.date===params.edition))error(404,'Edition not found');return {date:params.edition};}

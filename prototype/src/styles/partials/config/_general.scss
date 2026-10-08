@@ -1,0 +1,37 @@
+/* styles/partials/config/_general.scss */
+// Define general USWDS theme variables (paths, notifications, breakpoints, etc.)
+// Available variables: https://designsystem.digital.gov/documentation/settings/
+
+// $theme-font-path: '../node_modules/@uswds/uswds/dist/fonts';
+$theme-image-path: '/uswds/img';
+$theme-font-path: '/uswds/fonts';
+// Disable printing USWDS patch notes to terminal on build
+$theme-show-notifications: false;
+$theme-grid-container-max-width: 'full';
+// Utilities settings
+$theme-utility-breakpoints: (
+  // 160px
+  'card': false,
+  // 240px
+  'card-lg': false,
+  // 320px
+  'mobile': false,
+  // 480px
+  'mobile-lg': true,
+  // 640px
+  'tablet': true,
+  // 880px
+  'tablet-lg': false,
+  // 1024px
+  'desktop': true,
+  // 1200px
+  'desktop-lg': true,
+  // 1400px
+  'widescreen': true
+);
+// Focus styles
+$theme-focus-color: 'accent-warm';
+$theme-focus-width: '05';
+// $theme-focus-offset: 0.125rem;
+// Icon settings
+$theme-icon-image-size: 3;
