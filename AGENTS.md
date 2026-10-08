@@ -4,7 +4,7 @@ This is basic prototyping for interactive planning, not the official FedRAMP ser
 
 ## Start here
 
-Read README.md and CONTRIBUTING.md. Edit `prototype/src/` and `prototype/static/`; edit root `index.html` / `style.css` for the overview. `i13-open-house/` is generated output. `i12-*` and `archive/iteration-12/` are frozen comparisons. Earlier iterations live in Git history, not this checkout.
+Read README.md and CONTRIBUTING.md. Edit `prototype/src/` and `prototype/static/`; edit root `index.html` / `style.css` for the overview. `i13-open-house/` is generated output. Only Iteration 13 is included. Earlier iterations live in Git history, not this checkout.
 
 Use Node 24.21.0 and npm 11.19.0 (mise.toml). Run `npm ci --prefix prototype`, then `npm run check --prefix prototype`. Preview with `npm run dev --prefix prototype -- --host 127.0.0.1`. `npm run build` regenerates only the current Pages build. `npm run preview` serves the complete collection locally. Commit source and regenerated output together; pushing main publishes through GitHub Pages. Do not publish unless the task authorizes it.
 

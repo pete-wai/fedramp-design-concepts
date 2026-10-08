@@ -4,6 +4,5 @@ Basic interactive planning prototypes, not the official FedRAMP website. Officia
 
 - [Current asset notices](prototype/THIRD_PARTY_NOTICES.md)
 - Current licenses are included under i13-open-house/licenses/.
-- Iteration 12 retains per-variant THIRD_PARTY_NOTICES.md files.
 
 Community content is a dated October 4, 2026 snapshot. Proposals, comments and editorial summaries are not rules. New resource examples are explicitly illustrative. No analytics or submission backend.

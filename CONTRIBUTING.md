@@ -26,7 +26,7 @@ npm run build
 npm run preview
 ```
 
-Preview at http://127.0.0.1:4115/fedramp-design-concepts/ . The build script checks and builds the prototype with the repository prefix, then replaces only `i13-open-house/`. Review both source and generated changes. Pushing to main publishes; use a branch/PR unless direct publication is authorized. Never edit frozen `i12-*` builds.
+Preview at http://127.0.0.1:4115/fedramp-design-concepts/ . The build script checks and builds the prototype with the repository prefix, then replaces only `i13-open-house/`. Review both source and generated changes. Pushing to main publishes; use a branch/PR unless direct publication is authorized. Do not restore retired builds unless requested.
 
 ## Review checklist
 
@@ -44,4 +44,4 @@ Validation results are recorded in the overview at delivery. Automated checks ar
 
 19 root-path browser cases and 53 public-path/overview cases passed. Chromium, Firefox and WebKit covered phone/desktop themes, keyboard skip links, local selection/reset, outline disclosure, Top navigation, no-JS reading and 200% text. Static link review resolved 71,763 destinations across 1,545 built HTML pages. Compiler check: zero errors, 73 inherited warnings. Repository tooling: 26 tests passed. A clean copy of the included contributor source installed and rebuilt successfully using the documented commands.
 
-A separate self-review inspected complete phone/desktop captures. No participant or physical-device testing; no claim of production readiness. The original lab retains detailed reports and screenshots. The public build retains all 31,400 Iteration 12 candidate/preview files byte-for-byte.
+A separate self-review inspected complete phone/desktop captures. No participant or physical-device testing; no claim of production readiness. The original lab retains detailed reports and screenshots. Iteration 12 was subsequently removed from the repository and Pages at the user’s request; the validation above describes the Iteration 13 delivery.

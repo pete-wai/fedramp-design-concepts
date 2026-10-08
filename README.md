@@ -4,7 +4,7 @@
 
 **Basic prototyping for interactive planning. Not the official FedRAMP website.**
 
-Iteration 13 selects Open House from the ten Iteration 12 community concepts. It connects the Radiance homepage and Community Hub to clearly labeled Engineering Resources and Agency Use placeholders. The overview explains the hypotheses and next decisions. Iteration 12 remains available for comparison; prior iterations are removed from this published collection and recoverable in Git history.
+Iteration 13 selects Open House from the ten Iteration 12 community concepts. It connects the Radiance homepage and Community Hub to clearly labeled Engineering Resources and Agency Use placeholders. The overview explains the hypotheses and next decisions. Only Iteration 13 remains in this published collection. Earlier iterations are recoverable in Git history.
 
 Editable source is in `prototype/`. Start with [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md). The source, lockfile and generated Pages output are included together.
 
