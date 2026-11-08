@@ -1,6 +1,6 @@
 # FedRAMP interactive planning
 
-[Open Iteration 13](https://pete-wai.github.io/fedramp-design-concepts/) · [Community Hub](https://pete-wai.github.io/fedramp-design-concepts/i13-open-house/community/)
+[Open Iteration 13](https://pwai.dev/fedramp-design-concepts/) · [Community Hub](https://pwai.dev/fedramp-design-concepts/i13-open-house/community/)
 
 **Basic prototyping for interactive planning. Not the official FedRAMP website.**
 
