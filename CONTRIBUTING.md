@@ -45,3 +45,7 @@ Validation results are recorded in the overview at delivery. Automated checks ar
 19 root-path browser cases and 53 public-path/overview cases passed. Chromium, Firefox and WebKit covered phone/desktop themes, keyboard skip links, local selection/reset, outline disclosure, Top navigation, no-JS reading and 200% text. Static link review resolved 71,763 destinations across 1,545 built HTML pages. Compiler check: zero errors, 73 inherited warnings. Repository tooling: 26 tests passed. A clean copy of the included contributor source installed and rebuilt successfully using the documented commands.
 
 A separate self-review inspected complete phone/desktop captures. No participant or physical-device testing; no claim of production readiness. The original lab retains detailed reports and screenshots. Iteration 12 was subsequently removed from the repository and Pages at the user’s request; the validation above describes the Iteration 13 delivery.
+
+## Custom domain — November 8, 2026
+
+Current site: https://pwai.dev/fedramp-design-concepts/. Updated README links; application source and generated pages are unchanged. Pages run 42503353234 succeeded. The homepage, Open House community page, and sampled JavaScript assets returned HTTP 200; the old domain redirects. Self-review only. No rebuild or browser interaction/visual checks were needed or repeated for this documentation-only change.
